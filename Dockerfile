@@ -44,5 +44,6 @@ RUN npm install && npm run build
 EXPOSE 8080
 
 # Start Laravel
-CMD ["php", "-S", "0.0.0.0:8080", "-t", "public"]
+CMD php -S 0.0.0.0:${PORT} -t public
+
 
