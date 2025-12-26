@@ -61,8 +61,14 @@ class ProductController extends Controller
             'status'        => 1,
         ])->firstOrFail();
 
+        // ✅ Add a proper public URL for the stored image (public disk)
+        $product->cover_image_url = $product->cover_image
+            ? asset('storage/' . ltrim($product->cover_image, '/'))
+            : null;
+
         return Inertia::render('Product/Show', [
             'product' => $product,
         ]);
     }
+
 }

@@ -55,27 +55,56 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         return Inertia::render('Admin/Products/Edit', [
-            'product' => $product
+            'product' => $product,
+            'enums' => [
+                'level' => ['UG','PG','Diploma'],
+                'format' => ['softcopy','hardcopy'],
+                // Put your REAL enum values here:
+                'material_type' => [
+                    'solved-assignments',
+                    'guess-papers',
+                    'question-papers',
+                    'previous-year-papers',
+                    'sample-papers',
+                    'lab-manuals',
+                ],
+            ],
         ]);
     }
+
 
     public function update(Request $request, Product $product)
     {
         $data = $request->validate([
+            'title' => 'required|string|max:255',
+            'slug' => 'required|string|max:255',
+            'subject_code' => 'required|string|max:255',
+            'subject_name' => 'required|string|max:255',
+            'level' => 'required|in:UG,PG,Diploma',
+            'program' => 'nullable|string|max:255',
+
+            'material_type' => 'required|string|max:255',
+            'format' => 'required|in:softcopy,hardcopy',
+            'session' => 'required|string|max:255',
+
             'price' => 'required|numeric|min:0',
-            'session' => 'required|string',
-            'status' => 'required|in:0,1',
             'discount_price' => 'nullable|numeric|min:0',
+
             'description_html' => 'nullable|string',
+
+            'meta_title' => 'nullable|string|max:255',
+            'meta_description' => 'nullable|string|max:255',
+            'canonical_url' => 'nullable|string|max:255',
+
+            'status' => 'required|in:0,1',
+
             'cover_image' => 'nullable|image|max:2048',
         ]);
 
-        // Convert status to integer
         $data['status'] = (int) $data['status'];
 
         if ($request->hasFile('cover_image')) {
-            $data['cover_image'] = $request->file('cover_image')
-                ->store('products', 'public');
+            $data['cover_image'] = $request->file('cover_image')->store('products', 'public');
         }
 
         $product->update($data);
@@ -84,6 +113,7 @@ class ProductController extends Controller
             ->route('products.index')
             ->with('success', 'Product updated successfully');
     }
+
 
 
     public function destroy(Product $product)
