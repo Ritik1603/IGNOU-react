@@ -1,0 +1,334 @@
+@extends('layouts.user')
+@section('page_h1', '<span class="u-imp">IGNOU Post Graduate Diploma in Animal Welfare Admission</span>')
+@section('title', '') @section('description', '') @section('keywords', '') @section('og_title', '') @section('og_description', '') @section('og_image', '')
+@section('content')
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+</head>
+<body>
+    <div class="progress" aria-hidden="true"></div>
+    <main class="container mt-5">
+        <!-- Desktop Tab Navigation -->
+        <nav class="tab-nav" id="tabNav">
+            <button data-target="#home" class="active"><span class="ico"><i class="fa-solid fa-house"></i></span><span>Home</span></button>
+            <button data-target="#highlights"><span class="ico"><i class="fa-regular fa-calendar-check"></i></span><span>Highlights</span></button>
+            <button data-target="#syllabus"><span class="ico"><i class="fa-solid fa-book-open"></i></span><span>Syllabus</span></button>
+            <button data-target="#careers"><span class="ico"><i class="fa-solid fa-briefcase"></i></span><span>Careers</span></button>
+            <button data-target="#contact"><span class="ico"><i class="fa-solid fa-headset"></i></span><span>Contact</span></button>
+        </nav>
+
+        <!-- Home Tab -->
+        <div class="tab-panel active" data-tab="home">
+            <div class="hero-wrap">
+                <section id="home" class="hero">
+                    <h1><span class="u-imp">IGNOU Post Graduate Diploma in Animal Welfare Admission</span></h1>
+                    <p class="lead">Animal welfare is not a niche topic. Animal welfare is a serious subject that requires trained professionals who are familiar with animals, ethics, law, and practical practices. The IGNOU Post Graduate Diploma in Animal Welfare Admission(PGDAW) offers learners a focused one-year path into this growing field via open and distance learning.<br><br>Unnati Education is a company that works with students and professionals who are passionate about animals but do not know how to convert this passion into an academic path. This IGNOU Animal Welfare diploma bridges that gap. It combines practical skills, scientific knowledge and ethical reasoning for anyone who wants to work with farm, pet, zoo, research or entertainment animals.<br><br>This program, offered by the School of Extension and Development Studies(SOEDS), is for people of all backgrounds - not just veterinarians. This course is designed to help people who are interested in responsible animal care or policy, as well as welfare standards.</p>
+                    <div class="badges">
+                        <span class="badge brand"><i class="fa-regular fa-calendar"></i> Tentative Last Date: 31 Aug 2025</span>
+                        <span class="badge"><i class="fa-regular fa-clock"></i> Duration: 1 Year</span>
+                        <span class="badge"><i class="fa-solid fa-shield-check"></i> UGC Approved • ODL</span>
+                    </div>
+                    <div class="actions">
+                        <a class="btn primary" href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20PGDAW" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <a class="btn ghost" href="tel:+919355198199"><i class="fa-solid fa-phone"></i> Call</a>
+                    </div>
+                </section>
+            </div>
+
+            <section id="why" class="section">
+                <h2>Why this Post Graduate Diploma in Animal Welfare Program?</h2>
+                <p>There are many courses that cover the basics of life sciences and farming. Few courses are devoted to animal welfare, a multidisciplinary subject. It is in this respect that the program stands out.</p>
+                <p>First, this course directly addresses the four pillars of animal welfare.</p>
+                <ul class="list-check">
+                    <li>Welfare science</li>
+                    <li>Welfare ethics</li>
+                    <li>Welfare laws</li>
+                    <li>Welfare Standards</li>
+                </ul>
+                <p>The concepts are not taught in isolation as "theory only". These ideas are not isolated "theory-only" concepts, but rather they are linked to real-life situations where animals are being managed by humans. The animals that are included in this category include: cattle, bison, sheep, goats, pigs, poultry, working animals, performing animals, pet animals, zoo and laboratory animals.</p>
+                <p>Second, it allows people to work while they are studying. It is a distance and open learning program, so we can work and study at our own pace from home. It is especially useful for government workers, NGO staff, and veterinarians who don't wish to interrupt their careers.</p>
+                <p>Thirdly, PGDAW has a lot of relevance to current national as well as global discussions. The public is always interested in topics like animal experimentation, pet care standards, and ethical livestock production. This qualification helps students engage in these debates with facts, laws, and the use of scientific reasoning.</p>
+                <p>Finally, the program has a flexible learner profile. It is available to new graduates, mid-career professionals and animal lovers. The classroom is therefore diverse and full of experience, even though it's virtual.</p>
+            </section>
+        </div>
+
+        <!-- Highlights Tab -->
+        <div class="tab-panel" data-tab="highlights">
+            <section id="highlights" class="section">
+                <h2>IGNOU PGDAW Program Highlights</h2>
+                <div class="card">
+                    <div class="table-wrap">
+                        <table>
+                            <tr><th align="left">Feature</th><th align="left">Details</th></tr>
+                            <tr><td>Programme Name</td><td>Post Graduate Diploma in Animal Welfare (PGDAW)</td></tr>
+                            <tr><td>School</td><td>School of Extension and Development Studies</td></tr>
+                            <tr><td>Duration</td><td><span class="u-imp">1 Year</span></td></tr>
+                            <tr><td>Medium</td><td>English</td></tr>
+                            <tr><td>Total Credits</td><td>32</td></tr>
+                            <tr><td>Mode</td><td>Open Distance Learning</td></tr>
+                            <tr><td>Specialization</td><td>Animal Welfare</td></tr>
+                            <tr><td>Focus</td><td>Managed animal species in farm, companion and zoo contexts</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <p style="margin-top:10px"><strong>Last Date (Tentative):</strong> <span class="mono u-imp"><mark class="hl-yellow">31 August 2025</mark></span></p>
+            </section>
+        </div>
+
+        <!-- Syllabus Tab -->
+        <div class="tab-panel" data-tab="syllabus">
+            <section id="syllabus" class="section">
+                <h2>Post Graduate Diploma in Animal Welfare Curriculum & Syllabus</h2>
+                <div class="table-wrap">
+                    <table>
+                        <tr><th>Course Code</th><th>Title of the Course</th><th>Credits</th></tr>
+                        <tr><td>MAW-001</td><td>Animal Welfare Science and Ethics</td><td>8</td></tr>
+                        <tr><td>MAW-002</td><td>Animal Welfare Issues</td><td>8</td></tr>
+                        <tr><td>MAW-003</td><td>Animal Welfare Laws, Policies and Organizations</td><td>8</td></tr>
+                        <tr><td>MAW-004</td><td>Animal Welfare Practices, Economics and Livelihood</td><td>8</td></tr>
+                        <tr><td colspan="2"><strong>Total Credits</strong></td><td><strong>32</strong></td></tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Careers Tab -->
+        <div class="tab-panel" data-tab="careers">
+            <section id="eligibility" class="section">
+                <h2>IGNOU Post Graduate Diploma in Animal Welfare Admission Eligibility for PGDAW</h2>
+                <p>The program is characterized by its wide and inclusive eligibility. The only academic requirement is that you have graduated from a recognized university in any discipline. This means that you don't have to be a vet or a graduate of science to join.</p>
+                <p>No upper age limit.</p>
+            </section>
+
+            <section id="careers" class="section">
+                <h2>Career Opportunities after PGDAW- Where You Can Go with this Qualification</h2>
+                <div class="grid">
+                    <div class="card"><strong>Work in Animal Welfare Organizations</strong></div>
+                    <div class="card"><strong>Supporting Government and Regulatory Bodies</strong></div>
+                    <div class="card"><strong>Work with Veterinary and Research Institutions</strong></div>
+                    <div class="card"><strong>Working in the Law and Compliance Sector</strong></div>
+                    <div class="card"><strong>Corporate, Dairy & Livestock Industry</strong></div>
+                    <div class="card"><strong>Independent Consulting and Training</strong></div>
+                </div>
+            </section>
+
+            <section id="faq" class="section">
+                <h2>FAQs about the Post Graduate Diploma in Animal Welfare (PGDAW)</h2>
+                <div class="accordion">
+                    <div class="item"><div class="q"><h4>Q1. What is IGNOU PGDAW's main focus?</h4><i class="fa-solid fa-plus"></i></div><div class="a">The program is a comprehensive course that covers animal welfare, science, ethics, laws and standards. It includes all types of animals, including farm animals and pets, as well as working animals and zoo and laboratory animals.</div></div>
+                    <div class="item"><div class="q"><h4>Q2. Do I need to have a background in veterinary medicine to join PGDAW?</h4><i class="fa-solid fa-plus"></i></div><div class="a">No. You can enroll as long as you have graduated from a recognized institution. People with experience or interest in animal-related areas may find the course especially helpful.</div></div>
+                    <div class="item"><div class="q"><h4>Q3. How long does the program take to complete?</h4><i class="fa-solid fa-plus"></i></div><div class="a">The standard duration of the course is one year. The distance mode gives learners some flexibility to plan their study time.</div></div>
+                    <div class="item"><div class="q"><h4>Q4. Does the program suit NGO staff and animal shelter employees?</h4><i class="fa-solid fa-plus"></i></div><div class="a">Yes. This is a must-read for all those who work in animal welfare organizations such as shelters, gaushalas or other similar spaces, where decisions regarding welfare are made every day.</div></div>
+                    <div class="item"><div class="q"><h4>Q5. Can government staff or civil servants benefit from this diploma?</h4><i class="fa-solid fa-plus"></i></div><div class="a">Definitely, this knowledge can help officials from the local administration or departments of animal husbandry, wildlife and forest to better understand policy and implement it.</div></div>
+                    <div class="item"><div class="q"><h4>Q6. What types of roles am I eligible to take on after completing the PGDAW degree?</h4><i class="fa-solid fa-plus"></i></div><div class="a">Possible roles include animal welfare officer or program officer at NGOs. Other possible roles are compliance support or trainer for farms and labs.</div></div>
+                    <div class="item"><div class="q"><h4>Q7. How does Unnati Education support learners in this program?</h4><i class="fa-solid fa-plus"></i></div><div class="a">We help our students to understand their course expectations, create study plans and remain organized throughout the year. Instead of leaving learners to figure things out on their own, we provide clear, practical advice.</div></div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Conclusion – Building a Future in Animal Welfare With IGNOU PGDAW</h2>
+                <p>The IGNOU Post Graduate Diploma in Animal Welfare Admission provides more than just an academic certificate. It provides a structured method to transform concern for animal welfare into informed action. We can better understand animals' needs, take on welfare issues in a professional way, and be part of systems that affect how animals are treated.<br><br>Unnati Education believes that this diploma is a powerful tool for students, animal lovers, and professionals who want to make their career reflect their values. With its clear objectives and curriculum, as well as flexible learning options, the PGDAW allows for intellectual and ethical growth. As you progress along this path, our team is here to guide you, helping you to travel from 0 - 100 with confidence.</p>
+            </section>
+        </div>
+
+        <!-- Contact Tab -->
+        <div class="tab-panel" data-tab="contact">
+            <section id="contact" class="section">
+                <h2>Get Started Today!</h2>
+                <div class="card">
+                    <p>Contact Unnati Education for complete admission support.</p>
+                    <div class="actions">
+                        <a class="btn primary" href="https://wa.me/919355198199" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Now</a>
+                        <a class="btn ghost" href="tel:+919355198199"><i class="fa-solid fa-phone"></i> Call Now</a>
+                    </div>
+                    <p style="margin-top:12px"><strong>Call / WhatsApp: 9355 519 8199</strong></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Right Floating Buttons -->
+    <div class="fabs">
+        <a class="fab wa" href="https://wa.me/919355198199" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="fab call" href="tel:+919355198199" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+        <button class="fab top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <!-- Mobile Bottom Dock -->
+    <div class="dock-wrap">
+        <div class="dock" id="dock" role="navigation" aria-label="Bottom navigation">
+            <button data-target="#home" class="active"><span class="ico"><i class="fa-solid fa-house"></i></span><span>Home</span></button>
+            <button data-target="#highlights"><span class="ico"><i class="fa-regular fa-calendar-check"></i></span><span>Highlights</span></button>
+            <button data-target="#syllabus"><span class="ico"><i class="fa-solid fa-book-open"></i></span><span>Syllabus</span></button>
+            <button data-target="#careers"><span class="ico"><i class="fa-solid fa-briefcase"></i></span><span>Careers</span></button>
+            <button data-target="#contact"><span class="ico"><i class="fa-solid fa-headset"></i></span><span>Contact</span></button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> Copied!</div>
+
+    <!-- FULL ORIGINAL SCRIPTS – 100% UNTOUCHED -->
+<script>
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+function setDockHeightVar() {
+    const dock = document.querySelector('.dock');
+    const h = dock ? (dock.getBoundingClientRect().height + 10) : 84;
+    document.documentElement.style.setProperty('--dock-h', h + 'px');
+}
+window.addEventListener('load', setDockHeightVar);
+window.addEventListener('resize', setDockHeightVar);
+function wrapTables() {
+    document.querySelectorAll('table').forEach(t => {
+        if (!t.parentElement.classList.contains('table-wrap')) {
+            const w = document.createElement('div');
+            w.className = 'table-wrap';
+            t.parentNode.insertBefore(w, t);
+            w.appendChild(t);
+        }
+    });
+}
+wrapTables();
+const prog = document.querySelector('.progress');
+ScrollTrigger.create({
+    start: 0,
+    end: document.body.scrollHeight - innerHeight,
+    onUpdate: (self) => prog.style.transform = `scaleX(${self.progress})`
+});
+let isDesktop = window.matchMedia('(min-width: 1025px)').matches;
+function handleNavClick(target) {
+    $('#dock button, #tabNav button').removeClass('active');
+    $(`#dock button[data-target="${target}"], #tabNav button[data-target="${target}"]`).addClass('active');
+    updateNavIcons();
+    if (isDesktop) {
+        $('.tab-panel').removeClass('active').hide();
+        $(`.tab-panel[data-tab="${target.replace('#', '')}"]`).addClass('active').show();
+        gsap.to(window, {duration: .3, scrollTo: {y: '.tab-nav', offsetY: 10}, ease: 'power2.inOut'});
+    } else {
+        gsap.to(window, {duration: .8, scrollTo: {y: target, offsetY: 10}, ease: 'power2.inOut'});
+    }
+}
+$('#dock button, #tabNav button').on('click', function() {
+    const target = $(this).data('target');
+    handleNavClick(target);
+});
+function setActive() {
+    const y = $(window).scrollTop() + 120;
+    const ids = ['#home', '#why', '#highlights', '#syllabus', '#eligibility', '#careers', '#faq', '#contact'];
+    let current = '#home';
+    ids.forEach(id => {
+        const $el = $(id);
+        if (!$el.length) return;
+        const top = $el.offset().top, h = $el.outerHeight();
+        if (y >= top && y < top + h) current = id;
+    });
+    const buttonTarget = current === '#why' ? '#home' : (current === '#syllabus' ? '#syllabus' : (current === '#eligibility' || current === '#careers' || current === '#faq' || current === '#contact' ? '#careers' : current));
+    $('#dock button').removeClass('active');
+    $(`#dock button[data-target="${buttonTarget}"]`).addClass('active');
+    updateNavIcons();
+}
+function updateActive() { if (isDesktop) return; setActive(); }
+$(window).on('scroll', updateActive);
+$(window).on('resize', function() {
+    const newDesktop = window.matchMedia('(min-width: 1025px)').matches;
+    if (newDesktop !== isDesktop) {
+        isDesktop = newDesktop;
+        const currentTarget = $('#dock button.active, #tabNav button.active').first().data('target') || '#home';
+        handleNavClick(currentTarget);
+        if (!isDesktop) {
+            document.querySelector('main').style.paddingBottom = `calc(var(--dock-h) + var(--space-md))`;
+            $('.tab-panel').removeClass('active').show();
+        } else {
+            document.querySelector('main').style.paddingBottom = `var(--space-md)`;
+        }
+    } else { updateActive(); }
+    setDockHeightVar();
+});
+updateActive();
+function updateNavIcons() {
+    $('#dock button .ico i, #tabNav button .ico i').each(function() {
+        const $btn = $(this).closest('button');
+        const isActive = $btn.hasClass('active');
+        const $i = $(this);
+        const reg = ($i.data('regular') || '').split(' ');
+        const sol = ($i.data('solid') || '').split(' ');
+        if (reg.length || sol.length) {
+            $i.removeClass(reg.concat(sol).join(' '));
+            const cls = isActive ? sol : reg;
+            if (cls && cls.length) $i.addClass(cls.join(' '));
+        }
+    });
+}
+gsap.utils.toArray('.hero,.section,.card').forEach(el => {
+    gsap.from(el, {y: 16, opacity: 0, duration: .55, ease: 'power2.out', scrollTrigger: {trigger: el, start: 'top 85%'}});
+});
+ScrollTrigger.create({start: 400, onEnter: () => $('.fab.top').fadeIn(150), onLeaveBack: () => $('.fab.top').fadeOut(150)});
+$('#toTop').on('click', () => gsap.to(window, {duration: .8, scrollTo: 0, ease: 'power2.inOut'}));
+$(document).on('click', '.accordion .q', function() {
+    const $item = $(this).closest('.item');
+    const $a = $item.find('.a');
+    const willOpen = $a.is(':hidden');
+    $('.accordion .a').slideUp(140);
+    $('.accordion .q i').removeClass('fa-minus').addClass('fa-plus');
+    $('.accordion .item').removeClass('open');
+    if (willOpen) {
+        $a.slideDown(160);
+        $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+        $item.addClass('open');
+    }
+    setTimeout(setDockHeightVar, 220);
+});
+</script>
+<script>
+    (function() {
+        const clamp = (n, min, max) => Math.max(min, Math.min(n, max));
+        function bindTilt(el, opts) {
+            const strength = opts?.strength ?? 12;
+            const damp = opts?.damp ?? 8;
+            let raf = null, rx = 0, ry = 0;
+            function onMove(e) {
+                const rect = el.getBoundingClientRect();
+                const cx = (e.clientX - rect.left) / rect.width;
+                const cy = (e.clientY - rect.top) / rect.height;
+                const tRY = (cx - 0.5) * strength * 2;
+                const tRX = (0.5 - cy) * strength * 2;
+                function step() {
+                    rx += (tRX - rx) / (opts?.damp ?? damp);
+                    ry += (tRY - ry) / (opts?.damp ?? damp);
+                    el.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+                    el.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+                    el.style.setProperty('--mx', clamp(cx * 100, 0, 100) + '%');
+                    el.style.setProperty('--my', clamp(cy * 100, 0, 100) + '%');
+                    if (Math.abs(tRX - rx) > 0.1 || Math.abs(tRY - ry) > 0.1) {
+                        raf = requestAnimationFrame(step);
+                    } else {
+                        cancelAnimationFrame(raf);
+                        raf = null;
+                    }
+                }
+                if (!raf) raf = requestAnimationFrame(step);
+            }
+            function onLeave() {
+                el.style.setProperty('--rx', '0deg');
+                el.style.setProperty('--ry', '0deg');
+                el.style.removeProperty('--mx');
+                el.style.removeProperty('--my');
+            }
+            el.addEventListener('mousemove', onMove, {passive: true});
+            el.addEventListener('mouseleave', onLeave);
+            el.addEventListener('touchstart', e => {
+                const t = e.touches[0];
+                if (!t) return;
+                onMove({clientX: t.clientX, clientY: t.clientY});
+            }, {passive: true});
+            el.addEventListener('touchend', onLeave, {passive: true});
+        }
+        document.querySelectorAll('.section .card').forEach(el => bindTilt(el, {strength: 10, damp: 10}));
+        document.querySelectorAll('.table-wrap').forEach(el => bindTilt(el, {strength: 6, damp: 10}));
+    })();
+</script>
+@endsection
