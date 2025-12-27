@@ -7,6 +7,8 @@ export default function BachelorOfArtsProgrammes() {
 
     const programmes = [
         { title: "Bachelor of Arts (History)", code: "BAFHI", link: "/ignou/ignou-ba-in-history-admission-2025" },
+        { title: "Bachelor of Arts (English)", code: "BAEGH", link: "/ignou/ignou-ba-in-english-admission" },
+        { title: "Bachelor of Arts (Hindi)", code: "BAFHD", link: "/ignou/ignou-ba-in-hindi-admission-2025" },
         { title: "Bachelor of Arts (Economics)", code: "BAFEC", link: "/ignou/ignou-ba-economics-admission-2025" },
         { title: "Bachelor of Arts (Philosophy)", code: "BAFPY", link: "#" },
         { title: "Bachelor of Arts (Political Science)", code: "BAFPS", link: "/ignou/ignou-ba-in-political-science-admission-2025" },
@@ -15,7 +17,7 @@ export default function BachelorOfArtsProgrammes() {
         { title: "Bachelor of Arts (Sociology)", code: "BAFSO", link: "#" },
         { title: "Bachelor of Arts (Journalism & Digital Media)", code: "BAFJDM", link: "/ignou/ignou-ba-in-journalism-and-digital-media-admission-2025" },
         { title: "Bachelor of Arts (MSME)", code: "BAMSME", link: "/ignou/ignou-ba-in-micro-small-and-medium-enterprises-admission-2025" },
-        { title: "Bachelor of Arts (Facility & Services Management)", code: "BAFSM", link: "/ignou/ba-fsm" },
+        { title: "Bachelor of Arts (Facility & Services Management)", code: "BAFSM", link: "/ignou/ignou-ba-in-facility-and-services-management-admission-2025" },
         { title: "Bachelor of Arts (Education)", code: "BAFEDU", link: "/ignou/ba-education" },
     ];
 

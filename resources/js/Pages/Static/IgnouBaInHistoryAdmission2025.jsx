@@ -1,18 +1,18 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import UserLayout from "@/Layouts/UserLayout";
 import Seo from "@/Components/Seo";
 
-export default function BaInHistoryAdmission2025() {
+export default function BaInHistoryAdmission2026() {
   const infoTiles = useMemo(
     () => [
       { label: "University", value: "IGNOU", icon: <UniversityIcon className="h-5 w-5" /> },
       { label: "Programme", value: "BA in History", icon: <BookIcon className="h-5 w-5" /> },
-      { label: "Programme Code", value: "BAFHI / BAGHIH (ODL)", icon: <PenIcon className="h-5 w-5" /> },
-      { label: "Admission Cycle", value: "July 2025", icon: <CalendarIcon className="h-5 w-5" /> },
-      { label: "Last Date", value: "31 Aug 2025", icon: <DeadlineIcon className="h-5 w-5" /> },
+      { label: "Programme Code", value: "BAGHIH (ODL)", icon: <PenIcon className="h-5 w-5" /> },
+      { label: "Admission Cycle", value: "July 2026", icon: <CalendarIcon className="h-5 w-5" /> },
+      { label: "Last Date", value: "31 Aug 2026", icon: <DeadlineIcon className="h-5 w-5" /> },
       { label: "Duration", value: "3–6 Years", icon: <ClockIcon className="h-5 w-5" /> },
-      { label: "Medium", value: "Hindi & English", icon: <LanguageIcon className="h-5 w-5" /> },
-      { label: "Structure", value: "Semester-wise (CBCS)", icon: <BadgeIcon className="h-5 w-5" /> },
+      { label: "Medium", value: "Hindi / English", icon: <LanguageIcon className="h-5 w-5" /> },
+      { label: "Structure", value: "Semester + Flexible Credits", icon: <BadgeIcon className="h-5 w-5" /> },
     ],
     []
   );
@@ -36,9 +36,9 @@ export default function BaInHistoryAdmission2025() {
   return (
     <UserLayout>
       <Seo
-        title="IGNOU BA in History Admission 2025 | BAFHI"
-        description="We guide students through BA in History Admission 2025 under IGNOU. Our team supports BAFHI choices, CBCS structure, dates, and admission steps."
-        keywords="BA in History Admission, BAFHI, IGNOU History BA, BA History Admission 2025, Unnati Education"
+        title="IGNOU BA in History Admission 2026 | BAGHIH (ODL)"
+        description="Complete guide to IGNOU BA in History Admission 2026 (BAGHIH): eligibility, dates, semester-wise syllabus, careers, and Unnati Education admission support."
+        keywords="BA in History Admission 2026, IGNOU BAGHIH, BA History IGNOU, IGNOU BA History 2026, Unnati Education"
       />
 
       <main className="relative bg-[#f7f9fc] text-slate-900 dark:bg-[#070A12] dark:text-slate-50">
@@ -51,7 +51,7 @@ export default function BaInHistoryAdmission2025() {
         </div>
 
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-          {/* HERO (Blade content embedded) */}
+          {/* HERO */}
           <Hero />
 
           {/* QUICK FACTS */}
@@ -59,8 +59,8 @@ export default function BaInHistoryAdmission2025() {
             <div id="highlights" />
             <SectionHeader
               eyebrow="Highlights"
-              title="IGNOU BA in History Admission 2025 Highlights"
-              subtitle="Key details, eligibility, CBCS structure, and support."
+              title="IGNOU BA in History Admission 2026 Highlights"
+              subtitle="Key dates, eligibility, structure, and what you actually get."
             />
 
             <RevealGrid cols="lg:grid-cols-4">
@@ -77,25 +77,24 @@ export default function BaInHistoryAdmission2025() {
                   <table className="w-full text-left text-sm">
                     <thead>
                       <tr className="border-b border-slate-200/80 dark:border-white/10">
-                        <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">Feature</th>
+                        <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">What</th>
                         <th className="py-3 font-black text-slate-700 dark:text-slate-200">Details</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
                       <Row k="University" v="Indira Gandhi National Open University (IGNOU)" />
                       <Row k="Program Name" v="Bachelor of Arts in History" />
-                      <Row k="Program Code" v="BAGHIH (ODL Mode) • Also referred as BAFHI in guidance context" />
-                      <Row k="Admission Cycle" v="July 2025" />
-                      <Row k="Admission Last Date" v="August 31, 2025" />
-                      <Row k="Duration" v="Minimum 3 years, Maximum 6 years" />
-                      <Row k="Medium of Instruction" v="English & Hindi" />
-                      <Row k="Eligibility" v="10+2 or equivalent qualification" />
-                      <Row k="Mode of Study" v="Distance Learning + Online Learning" />
-                      <Row k="Structure" v="Semester-wise, Choice-Based Credit System (CBCS)" />
-                      <Row k="Special Features" v="Flexibility, Skill Courses, Interdisciplinary Electives" />
+                      <Row k="Program Code" v="BAGHIH (Distance Learning / ODL Mode)" />
+                      <Row k="Admission Cycle" v="July 2026 Session" />
+                      <Row k="Last Date to Apply" v="August 31, 2026" />
+                      <Row k="Program Duration" v="Minimum 3 Years, Maximum 6 Years" />
+                      <Row k="Study Medium" v="English or Hindi (Choose One)" />
+                      <Row k="Eligibility" v="Passed Class 12 from any recognized board" />
+                      <Row k="Study Mode" v="Distance Learning with online support" />
+                      <Row k="Course Structure" v="Semester-based with flexible credit system (CBCS-style)" />
                       <Row
                         k="Admission Support"
-                        v="Unnati Education helps with admission, assignments, previous year papers, and practical guidance."
+                        v="Unnati Education helps with form filling, documents, study centre selection, assignments, PYQs, and exam updates."
                       />
                     </tbody>
                   </table>
@@ -106,50 +105,58 @@ export default function BaInHistoryAdmission2025() {
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               <Reveal>
                 <ContentCard
-                  title="BA in History Admission 2025 – Course Details"
+                  title="So why study History anyway?"
                   paragraphs={[
-                    "The BA in History course design gives learners a balanced mix of core history papers, interdisciplinary exposure, skills-building courses, and electives. It’s structured so you don’t just “memorize history,” you learn how to analyze it and apply it in real-world contexts.",
+                    "Look, I get it. When you tell someone you're studying history, they probably ask if you're planning to become a teacher. But here's the thing most people don't realize—history graduates develop some really valuable skills. You learn how to dig through information, question what you read, look at things from different angles, and make sense of complicated situations. These are exactly the abilities needed in government jobs, journalism, law, museums, and even corporate research.",
+                    "What makes IGNOU different is they follow the New Education Policy 2020. Basically, you're not stuck with a fixed set of boring subjects. You get to choose from core papers, skill-building courses, and other interesting topics like disaster management or communication. You can even mix in some psychology if that interests you.",
+                    "And here's something really important—this program is for everyone. Fresh out of Class 12? Perfect. Working a full-time job? No problem. Took a break from studies years ago? Come on in. There's no age bar, and you get up to six years to finish everything at your own speed.",
+                    "The beauty of this program is that it respects your life situation. Maybe you're a parent who needs to be home with kids. Maybe you work odd hours. Maybe you live in a place where good colleges aren't nearby. Distance learning solves all these problems. You study when you can, where you can, without compromising on quality."
                   ]}
-                  bullets={[
-                    { b: "Discipline-specific Core Courses (DSC):", t: "Indian and World History across major periods." },
-                    { b: "Discipline-Specific Electives (DSE):", t: "Focused regions like USA, USSR, Africa, SE Asia, China, Japan, Modern Europe." },
-                    { b: "Interdisciplinary Courses (IDC):", t: "Related areas like disaster management, anthropology, Indian society." },
-                    { b: "Ability Enhancement (AECC):", t: "Environment studies + communication skills for general awareness." },
-                    { b: "Skill Enhancement (SEC):", t: "Practical subjects like counselling, academic writing, leadership, etc." },
-                  ]}
-                  footer="This layering makes sure learners understand history as a living discipline connected to society, policy, and careers."
+                  footer="If you want a degree that builds thinking skills (not just marks), BA History is a solid bet — provided you study consistently."
                 />
               </Reveal>
 
-              <Reveal>
-                <ContentCard
-                  title="BA in History Admission Eligibility"
-                  paragraphs={["The admission requirements are straightforward and open for all kinds of learners:"]}
-                  bullets={[
-                    { b: "Educational Qualification:", t: "10+2 or equivalent exam from a recognized board." },
-                    { b: "Age Limit:", t: "No minimum/maximum age limit." },
-                    { b: "Medium:", t: "Choose English or Hindi for study and exams." },
-                  ]}
-                  footer="IGNOU’s open eligibility supports students, working professionals, homemakers, and learners who want to resume education."
-                />
-              </Reveal>
+			<Reveal>
+			<ContentCard
+				title="Who can apply for BA in History Admission 2026?"
+				paragraphs={[
+				"The requirements are pretty straightforward. IGNOU believes education should be accessible, so they keep things simple",
+				]}
+				bullets={[
+				{ b: "Education:", t: "Pass certificate from Class 12 or any equivalent exam from a recognized board" },
+				{ b: "Age limit:", t: "No age limit at all—whether you're 18 or 58, you're welcome" },
+				{ b: "Medium:", t: "Choose whether you want to study in English or Hindi" },
+				{ b: "Stream:", t: "Your Class 12 stream doesn't matter—Science, Commerce, Arts, whatever you studied is fine" },
+				{ b: "Timeline:", t: "Up to 6 years maximum to complete the degree." },
+				]}
+				footer={[
+				"This open approach is why working people, homemakers, and folks from rural areas pick IGNOU. They don't create unnecessary hurdles. I've seen people from all walks of life succeed in this program. There was this guy who worked at a petrol pump during the day and studied at night. Another student was a homemaker who studied while her kids were at school. A retired army officer joined because he always loved history but never got to study it formally. That's the kind of diversity this program welcomes.",
+				"The fact that your Class 12 stream doesn't matter is huge. So many students feel trapped by decisions they made as teenagers. You picked Science because everyone said it was the smart choice, but your heart was always in humanities? This is your chance to follow that interest. You studied Commerce because of family pressure, but you always loved reading about history? Now you can actually study it properly."
+				]}
+			/>
+			</Reveal>
+
             </div>
 
             <div className="mt-6 grid gap-6 lg:grid-cols-2">
               <Reveal>
                 <ContentCard
-                  title="BA in History Admission 2025 Last Date"
+                  title="Important dates you can’t miss"
                   paragraphs={[
-                    "The admission deadline is August 31, 2025. Because the program runs on a semester-based cycle, missing this deadline usually means waiting for the next admission window.",
-                    "Unnati Education helps you avoid last-minute errors and delays. Our counselors can assist with:",
+                    "Listen, timing really matters here. The BA in History Admission 2026 window is open right now, but it closes on August 31, 2026. If you miss that date, you'll have to wait for the next cycle, which could delay your plans by months. I've seen students miss deadlines by just a day or two and then regret it for half a year.",
+                    "Here's what you should do now:",
                   ]}
                   bullets={[
-                    { t: "Online admission form filling" },
-                    { t: "Correct document uploads" },
-                    { t: "Selecting the right study centre" },
-                    { t: "Subject selection aligned with your goal (UPSC/teaching/research, etc.)" },
+                    { t: "Find your Class 12 mark sheet and passing certificate" },
+                    { t: "Get a passport-size photo scanned and ready" },
+                    { t: "Keep your Aadhaar card or another ID proof handy" },
+                    { t: "Decide if you want English or Hindi as your study medium" },
+                    { t: "Think about which study center works best for you—that's where you'll submit work and take exams" },
                   ]}
-                  footer="If you want faster help, message “BAFHI 2025” on WhatsApp."
+				footer={[
+                    "The study center choice matters more than you might think. Pick one that's reasonably close to where you live or work. You'll need to go there for assignments and exams, so accessibility counts. Some centers are better organized than others too, but we'll talk about that.",
+                    "Feeling a bit lost with all this? That's totally normal. Unnati Education walks students through every single step. We help with filling forms correctly, uploading documents properly, picking the right study center, and even choosing subjects that match your goals. You don't have to figure this out alone. We've done this hundreds of times, so we know exactly where people usually get stuck and how to avoid those problems.",
+                  ]}
                 />
               </Reveal>
 
@@ -157,16 +164,16 @@ export default function BaInHistoryAdmission2025() {
                 <div className="rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-6 shadow-sm dark:border-white/10 dark:bg-[#0b1220]/70">
                   <h3 className="font-black text-slate-900 dark:text-white">Quick 3-step admission flow</h3>
                   <p className="mt-1 text-slate-600 dark:text-slate-300">
-                    Clean, predictable process — you just need to execute it correctly.
+                    Simple process — but sloppy execution causes delays. Don’t be that person.
                   </p>
                   <div className="mt-4 grid gap-4">
-                    <StepMini n="01" title="Check eligibility" desc="10+2 or equivalent qualification." />
-                    <StepMini n="02" title="Apply online" desc="Fill IGNOU form, select RC/SC, upload documents." />
-                    <StepMini n="03" title="Get support" desc="Assignments, exam updates, CBCS planning & guidance." />
+                    <StepMini n="01" title="Confirm eligibility" desc="12th pass (any stream) + choose English/Hindi." />
+                    <StepMini n="02" title="Apply online" desc="Fill IGNOU form, upload documents, choose RC/SC." />
+                    <StepMini n="03" title="Plan semesters" desc="Select subjects smartly + stay consistent on assignments." />
                   </div>
 
                   <div className="mt-5 flex flex-wrap gap-3">
-                    <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20History" tone="primary">
+                    <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20History%202026" tone="primary">
                       <WhatsAppIcon className="h-5 w-5" />
                       WhatsApp Guidance
                     </CTA>
@@ -180,218 +187,202 @@ export default function BaInHistoryAdmission2025() {
             </div>
           </Section>
 
-          {/* ABOUT (Blade) */}
+          {/* ABOUT */}
           <Section alt>
             <div id="about" />
             <SectionHeader
               eyebrow="About"
-              title="About Bachelor of Arts in History (BAFHI)"
-              subtitle="What the program is and what it aims to build in you."
+              title="What exactly is this BA in History program about?"
+              subtitle="Distance learning, but not low value — if you treat it seriously."
             />
 
             <div className="grid gap-6 lg:grid-cols-2">
               <Reveal>
                 <Card>
                   <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                    The Bachelor of Arts in History (Program Codes <b>BAFHI</b> and <b>BAGHIH</b>) is an undergraduate
-                    program offered by the Indira Gandhi National Open University (IGNOU). It’s offered in the Open
-                    and Distance Learning (ODL) mode, making it accessible and flexible for learners across regions and
-                    backgrounds.
+                      IGNOU offers this degree with two program codes: BAFHI and BAGHIH. It's completely through distance learning, which means you don't have to show up for daily classes. You study from home using books, online materials, and assignments that you submit periodically. You can work, take care of your family, and still earn a proper degree that's recognized everywhere.
                   </p>
                   <p className="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-                    There’s no restrictive age bracket. Learners who have completed schooling and adults restarting
-                    education can both enroll. The medium of instruction is <b>English</b> and <b>Hindi</b>.
+                      Another great thing? You can study and write exams in either English or Hindi. Whatever feels comfortable for you. This makes it easy for students from small towns or those who studied in their regional language to pursue higher education without language barriers.
+                  </p>
+                  <p className="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    The program isn't just thrown together randomly. Every course has been carefully planned to give you both depth and breadth. You'll understand how India evolved through different periods, but you'll also learn about world history so you can see the bigger picture. You'll study economic changes, social movements, political developments, and cultural transformations. This comprehensive approach means you graduate with real understanding, not just surface-level knowledge.
                   </p>
                 </Card>
               </Reveal>
 
               <Reveal>
                 <Card>
-                  <h3 className="font-black text-slate-900 dark:text-white">Program goals</h3>
+                  <h3 className="font-black text-slate-900 dark:text-white">What you’ll actually learn</h3>
                   <ul className="mt-4 space-y-3">
-                    <CheckItem text="Introduce key concepts in Indian and World History across ancient, medieval, and contemporary periods." />
-                    <CheckItem text="Develop reading and writing skills through regular tasks, collaboration, and research-oriented work." />
-                    <CheckItem text="Expose you to the interdisciplinary nature of History through sociology, political science, economics, literature, and culture." />
-                    <CheckItem text="Build analytical tools to understand current issues by studying patterns from the past." />
-                    <CheckItem text="Prepare you for careers and higher studies in archaeology, history, public administration, tourism heritage, and related fields." />
+                    <CheckItem text="You'll study both Indian history and world history, covering everything from ancient times to modern events" />
+                    <CheckItem text="You'll get better at reading critically, writing clearly, and doing proper research through assignments and projects" />
+                    <CheckItem text="You'll see connections between history and other subjects like sociology, political science, economics, and culture" />
+                    <CheckItem text="You'll learn to look at current problems by understanding what happened in the past" />
+                    <CheckItem text="You'll be ready for jobs or further studies in archaeology, administration, heritage management, tourism, and more" />
                   </ul>
                 </Card>
               </Reveal>
             </div>
           </Section>
 
-          {/* SYLLABUS (Blade) */}
+          {/* HOW IT WORKS */}
           <Section>
-            <div id="syllabus" />
+            <div id="how-it-works" />
             <SectionHeader
-              eyebrow="Syllabus"
-              title="IGNOU BA in History Syllabus (Semester-wise)"
-              subtitle="Semester 1–6 structure (CBCS)."
-              rightCTA={
-                <CTA href="https://wa.me/919355198199" tone="primary">
-                  <WhatsAppIcon className="h-5 w-5" /> Get Full Syllabus
-                </CTA>
-              }
+              eyebrow="How it works"
+              title="How the course actually works"
+              subtitle="The program runs on a semester system. Your three years get divided into six semesters. Each semester, you study different types of courses:"
             />
 
             <div className="grid gap-6 lg:grid-cols-2">
               <Reveal>
-                <SyllabusTable
-                  title="Semester 1"
-                  rows={[
-                    ["DSC", "History of India – I", "BHIC-101", "6"],
-                    ["DSC", "Social Formations and Cultural Patterns of the Ancient World", "BHIC-102", "6"],
-                    ["AECC", "Environmental Studies", "BEVAE-181", "4"],
-                    ["IDC", "Disaster Management", "BPAG-171", "6"],
+                <ContentCard
+                  title="What each course type means"
+                  paragraphs={[
+                    "IGNOU’s BA History isn’t only core history. It’s a structured mix that builds both knowledge and practical skills.",
                   ]}
+                  bullets={[
+                    { b: "Core History Papers:", t: "These are the main subjects covering Indian and world history across different time periods. This is the foundation of your degree. You'll move chronologically through Indian history while also understanding how the rest of the world was developing during those same periods." },
+                    { b: "Elective Papers:", t: "Here you get to pick topics you find interesting—maybe the history of America, Russia, Africa, Southeast Asia, China, Japan, or Europe. This is where you can specialize a bit and dive deeper into areas that fascinate you. Want to understand the Soviet Union? Pick that. Curious about how Japan modernized so quickly? There's a paper for that" },
+                    { b: "Interdisciplinary Papers:", t: "These let you explore related areas like disaster management, anthropology, and how Indian society works. This is important because history doesn't exist in isolation. Understanding sociology helps you understand social history. Knowing about disasters helps you study how societies respond to crises." },
+                    { b: "Skill Enhancement Papers:", t: "These teach practical stuff like academic writing, counseling basics, communication skills, and leadership. These aren't just fillers—they're genuinely useful skills. Good writing helps in every career. Communication skills matter everywhere. Leadership training prepares you for management roles." },
+                    { b: "Ability Enhancement Papers:", t: "General awareness topics like environmental studies and communication fundamentals. These round out your education and make sure you're not just book-smart but also aware of current issues facing the world." },
+                  ]}
+                  footer="This mix ensures you're not just learning dates and events. You're building skills that actually matter in real life. You're becoming someone who can think clearly, write well, research thoroughly, and communicate effectively. That combination is powerful."
                 />
               </Reveal>
 
               <Reveal>
-                <SyllabusTable
-                  title="Semester 2"
-                  rows={[
-                    ["DSC", "History of India – II", "BHIC-103", "6"],
-                    ["DSC", "Social Formations and Cultural Patterns of the Medieval World", "BHIC-104", "6"],
-                    ["AECC", "(Any 1) English Communication / Hindi Bhasha aur Sampreshan", "BEGAE-182 / BHDAE-182", "4"],
-                    [
-                      "GE",
-                      "(Any 1) Media & Communication Skills / Disaster Management / Philosophy of Religion / Indian Society",
-                      "BEGG-172 / BPAG-172 / BPYG-172 / BSOG-171",
-                      "6",
-                    ],
-                  ]}
-                />
-              </Reveal>
-
-              <Reveal>
-                <SyllabusTable
-                  title="Semester 3"
-                  rows={[
-                    ["DSC", "History of India – III (c. 750 – 1206 CE)", "BHIC-105", "6"],
-                    ["DSC", "Rise of the Modern West – I", "BHIC-106", "6"],
-                    ["IDC", "History of India: Earliest Times to c. 300 BCE", "BHID-101", "6"],
-                    [
-                      "SEC",
-                      "(Any 1) Emotional Intelligence / Counselling Psychology / Psychology for Living / Academic Writing & Composition",
-                      "BPCS-183 / BPCS-185 / BPCG-175 / BEGG-173",
-                      "4",
-                    ],
-                  ]}
-                />
-              </Reveal>
-
-              <Reveal>
-                <SyllabusTable
-                  title="Semester 4"
-                  rows={[
-                    ["DSC", "History of India – IV (c. 1206 – 1550 CE)", "BHIC-107", "6"],
-                    ["DSC", "Rise of the Modern West – II", "BHIC-108", "6"],
-                    ["IDC", "History of India: c. 300 BCE – 8th Century CE", "BHID-102", "6"],
-                    [
-                      "SEC",
-                      "(Any 1) Emotional Intelligence / Managing Stress / Writing & Study Skills / Tourism Anthropology / Computer Applications in Business / Leadership & Teamwork",
-                      "BPCS-183 / BPCS-185 / BEGS-183 / BANS-183 / BCOS-183 / BPCS-187",
-                      "4",
-                    ],
-                  ]}
-                />
-              </Reveal>
-
-              <Reveal>
-                <SyllabusTable
-                  title="Semester 5"
-                  rows={[
-                    ["DSC", "History of India – V (c. 1550 – 1605 CE)", "BHIC-109", "6"],
-                    ["IDC", "History of India: 8th to 15th Century CE", "BHID-103", "6"],
-                    [
-                      "DSE-1",
-                      "(Any 1) History of USA (1776–1945) / USSR (1917–1964) / Africa (1500–1960)",
-                      "BHIE-141 / BHIE-143 / BHIE-145",
-                      "6",
-                    ],
-                    [
-                      "DSE-2",
-                      "(Any 1) History of USA (1776–1945) / USSR (1917–1964) / Africa (1500–1960)",
-                      "BHIE-141 / BHIE-143 / BHIE-145",
-                      "6",
-                    ],
-                  ]}
-                />
-              </Reveal>
-
-              <Reveal>
-                <SyllabusTable
-                  title="Semester 6"
-                  rows={[
-                    ["DSC", "History of India – VI (c. 1750 – 1857 CE)", "BHIC-110", "6"],
-                    ["IDC", "History of India: 16th to Mid-18th Century CE", "BHID-104", "6"],
-                    [
-                      "DSE-3",
-                      "(Any 1) Southeast Asia (19th–20th) / China & Japan (1840–1949) / Modern Europe (1780–1939)",
-                      "BHIE-142 / BHIE-144 / BHIE-146",
-                      "6",
-                    ],
-                    [
-                      "DSE-4",
-                      "(Any 1) Southeast Asia (19th–20th) / China & Japan (1840–1949) / Modern Europe (1780–1939)",
-                      "BHIE-142 / BHIE-144 / BHIE-146",
-                      "6",
-                    ],
-                  ]}
-                />
+                <Card>
+                  <h3 className="font-black text-slate-900 dark:text-white">Pro tip (most students ignore this)</h3>
+                  <p className="mt-2 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Don’t choose electives randomly. Choose them based on your goal:
+                  </p>
+                  <div className="mt-4 grid gap-3">
+                    <MiniNote title="UPSC/PSC" text="Pick papers that strengthen optional + essay writing + analysis." />
+                    <MiniNote title="Teaching/Academics" text="Pick areas you can later specialize in for MA/NET." />
+                    <MiniNote title="Heritage/Tourism" text="Lean toward culture, regions, and modern world context." />
+                    <MiniNote title="Content/Media" text="Pick topics with narrative depth (modern Europe, USSR, etc.)." />
+                  </div>
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20Help%20me%20choose%20BA%20History%20electives%202026" tone="primary">
+                      <WhatsAppIcon className="h-5 w-5" /> Help me choose electives
+                    </CTA>
+                    <CTA href="tel:+919355198199" tone="ghost">
+                      <PhoneIcon className="h-5 w-5" /> Talk to counselor
+                    </CTA>
+                  </div>
+                </Card>
               </Reveal>
             </div>
           </Section>
 
-          {/* CAREERS (Blade) */}
+                    {/* COMPLETE COURSE STRUCTURE */}
+                    <Section alt>
+                        <div id="syllabus" />
+                        <SectionHeader
+                            eyebrow="Course Structure"
+                            title="Complete Course Structure"
+                            subtitle="The program is organized into six semesters with a careful progression from basics to advanced topics."
+                            rightCTA={
+                                <CTA
+                                    href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20Need%20Full%20Syllabus%20Details"
+                                    tone="primary"
+                                >
+                                    <WhatsAppIcon className="h-5 w-5" /> Get Full Details
+                                </CTA>
+                            }
+                        />
+
+                        <Reveal>
+                            <SyllabusAccordion />
+                        </Reveal>
+
+                        <div className="mt-8" />
+
+                        <Reveal>
+                            <Card>
+                                <h3 className="text-2xl font-black text-slate-900 dark:text-white">
+                                    Understanding the Course Types
+                                </h3>
+                                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            CC - Core Course
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Essential economics subjects that form the foundation of your degree
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            AECC - Ability Enhancement Compulsory Course
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Communication and environmental awareness courses
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            GE - Generic Elective
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Choose from various disciplines to broaden your knowledge
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            SEC - Skill Enhancement Course
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Practical skills courses for career readiness
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5 sm:col-span-2">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            DSE - Discipline Specific Elective
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Specialized economics courses allowing you to focus on areas of interest
+                                        </div>
+                                    </div>
+                                </div>
+                            </Card>
+                        </Reveal>
+                    </Section>
+
+
+          {/* CAREERS */}
           <Section>
             <div id="careers" />
             <SectionHeader
               eyebrow="Careers"
-              title="Career Opportunities After BA in History"
-              subtitle="History isn’t “only teaching” — it’s a versatile base for multiple paths."
+              title="What Jobs Can You Actually Get After Completing BA in History?"
+              subtitle="History isn’t a dead-end — but you must position yourself."
             />
 
             <div className="grid gap-6 lg:grid-cols-2">
               <Reveal>
                 <Card>
                   <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                    An education in History can lead to a broad range of roles — governance, academia, heritage, media,
-                    and research. Here are strong pathways students commonly pursue:
+                    This matters because nobody wants to spend three years on something that leads nowhere. The reality is that history opens more doors than you'd think:
                   </p>
 
                   <ul className="mt-4 space-y-3">
-                    <CheckItem
-                      bold="Civil Service:"
-                      text="History is one of the most preferred optional subjects for UPSC and State PSC examinations."
-                    />
-                    <CheckItem
-                      bold="Academics & Teaching:"
-                      text="With higher education, become a lecturer/professor/school teacher."
-                    />
-                    <CheckItem bold="Museums & Archives:" text="Curator, conservator, archivist, documentation roles." />
-                    <CheckItem
-                      bold="Archaeology & Heritage:"
-                      text="Work with surveys, excavation projects, and conservation of heritage sites."
-                    />
-                    <CheckItem
-                      bold="Tourism (Cultural Tourism):"
-                      text="Heritage site operations, management, and travel advisory."
-                    />
-                    <CheckItem
-                      bold="Research Institutes & NGOs:"
-                      text="Think tanks, cultural NGOs, and international organizations."
-                    />
-                    <CheckItem
-                      bold="Media & Content:"
-                      text="Research writing, books, documentaries, journalism."
-                    />
-                    <CheckItem
-                      bold="Corporate (analytical roles):"
-                      text="Knowledge management, research, education-adjacent roles."
-                    />
+                    <CheckItem bold="Government jobs / UPSC / PSC:" text="History is one of the top choices for UPSC and State PSC exams. Lots of IAS and IPS officers studied history. The analytical skills you develop are perfect for administrative roles. When you're analyzing historical events, you're basically practicing for policy analysis. When you're understanding why empires fell, you're learning about governance failures. This directly translates to civil services work." />
+                    <CheckItem bold="Teaching & academics:" text="Get a Master's degree and clear NET, and you can teach in colleges. Even without that, schools always need good history teachers who can make the subject interesting for kids. And honestly, there's something special about teaching history. You're shaping how the next generation understands the world. You're helping them develop critical thinking. That's meaningful work." />
+                    <CheckItem bold="Museums and Heritage:" text="Work as a curator taking care of artifacts, an archivist organizing historical documents, or a heritage manager at monuments and cultural sites. India has thousands of heritage sites that need trained professionals. Museums are expanding. There's real demand here, especially as tourism grows." />
+                    <CheckItem bold="Archaeology:" text="Join teams doing excavations, help preserve historical sites, or work with the Archaeological Survey of India on protecting our heritage. Every year, new sites are discovered and old ones need maintenance. If you love being outdoors and discovering physical traces of the past, this field is incredibly rewarding." />
+                    <CheckItem bold="Tourism (cultural):" text="Become a tour guide specializing in historical places, work with travel companies planning cultural tours, or manage heritage hotels and tourist sites. Cultural tourism is booming. People want authentic experiences, and they need knowledgeable guides who can tell stories, not just rattle off facts." />
+                    <CheckItem bold="Research orgs / NGOs:" text="Think tanks, policy institutes, and NGOs working on social issues need researchers who understand historical context. Policy doesn't happen in a vacuum. Good policy requires understanding how similar situations were handled before, what worked, what failed, and why." />
+                    <CheckItem bold="Media & content:" text=" Write books, create documentaries, work as a journalist covering culture and politics, or join publishing companies. There's huge demand for well-researched historical content. Streaming platforms want documentaries. Publishers want accessible history books. Magazines need writers who can provide historical perspective on current events." />
+                    <CheckItem bold="Corporate Jobs:" text="Companies hire people for research roles, knowledge management, content development, and analysis. They need folks who can handle complex information and explain it clearly. Your ability to research thoroughly, synthesize information, and present it coherently is valuable in business strategy, market research, and competitive analysis." />
                   </ul>
+
+                  <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    The bottom line? History teaches you how to think, not just what to think. And that skill works everywhere. You learn to question sources, identify bias, understand context, see patterns, and draw reasonable conclusions. These aren't just academic skills—they're life skills that make you better at almost any job.
+                  </p>
                 </Card>
               </Reveal>
 
@@ -399,64 +390,127 @@ export default function BaInHistoryAdmission2025() {
                 <div className="grid gap-6">
                   <Card>
                     <h3 className="font-black text-slate-900 dark:text-white">
-                      Why Choose Unnati Education for IGNOU BA in History Admission 2025?
+                      Why work with Unnati Education for BA in History Admission 2026?
                     </h3>
                     <p className="mt-2 text-slate-600 dark:text-slate-300">
-                      You focus on studying — we handle the admissions + academic pipeline.
+                      Getting into IGNOU isn't rocket science, but small mistakes can cause big problems—rejections, delays, or wrong subject selections. We've been helping students with this for years, and we know every little detail that matters.
                     </p>
                     <ul className="mt-4 space-y-3">
-                      <CheckItem text="Complete admission guidance" />
-                      <CheckItem text="Solved Assignments (Handwritten + Soft Copy)" />
-                      <CheckItem text="Previous Year Question Papers & Guess Papers" />
-                      <CheckItem text="Support for Practical File Preparation" />
-                      <CheckItem text="Notes and exam-focused coaching support" />
-                      <CheckItem text="Updates on re-registration, results, exam schedules" />
+                      <CheckItem text="Walk you through the entire online form filling process step by step" />
+                      <CheckItem text="Check your documents and help upload them correctly" />
+                      <CheckItem text="Suggest study centers near you that work well" />
+                      <CheckItem text="Advise on which subject combinations make sense for your goals" />
+                      <CheckItem text="Provide solved assignments in handwritten and typed formats" />
+                      <CheckItem text="Share previous year papers and likely questions for exams" />
+                      <CheckItem text="Keep you updated on exam dates, results, and re-registration deadlines" />
+                      <CheckItem text="Help prepare practical files if your course needs them" />
                     </ul>
+
+					<p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    	We handle the confusing paperwork so you can focus on studying. Our team stays on top of every IGNOU rule change, which means you get correct information without the guesswork. IGNOU sometimes changes procedures, updates forms, or modifies requirements. We track all that so you don't have to worry about missing something important.
+                    </p>
+					<p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+						The assignment help we provide is particularly useful. IGNOU assignments aren't just busy work—they carry marks that count toward your final grade. We provide solved assignments that you can reference while writing your own. We give you both handwritten and typed versions so you can see different presentation styles. This doesn't mean copying—it means learning how to structure answers properly, what depth is expected, and how to present information clearly.                  
+					</p>
                   </Card>
 
                   <Card>
                     <h3 className="font-black text-slate-900 dark:text-white">
-                      Recommended Add-On Courses to boost outcomes
+                      Extra courses that make your profile stronger
                     </h3>
                     <p className="mt-2 text-slate-600 dark:text-slate-300">
-                      Add-ons can give you an edge, especially if you’re aiming for interdisciplinary work.
+                      While the BA in History degree itself is valuable, adding some specialized certificates or diplomas can really set you apart when applying for jobs:
                     </p>
                     <ul className="mt-4 space-y-3">
-                      <CheckItem text="Certificate in Archaeology & Museology" />
+                      <CheckItem text="Certificate in Archaeology and Museology" />
                       <CheckItem text="Diploma in Heritage Tourism Studies" />
-                      <CheckItem text="Certificate in Indian Art & Architecture" />
-                      <CheckItem text="Certificate in Records Management & Archival Studies" />
-                      <CheckItem text="Foreign Language Courses (French, Spanish, German)" />
+                      <CheckItem text="Certificate in Indian Art and Architecture" />
+                      <CheckItem text="Certificate in Records Management and Archival Studies" />
+                      <CheckItem text="Foreign Language Courses like French, Spanish, or German" />
                       <CheckItem text="Diploma in Political Science or Sociology" />
                     </ul>
+
+					<p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+						These extras show employers you've gone beyond basic requirements. They're especially useful if you want jobs with international organizations, foreign embassies, or projects involving multiple countries. A foreign language combined with history knowledge? That's a powerful combination for international cultural organizations or diplomatic services.
+					</p>
                   </Card>
                 </div>
               </Reveal>
             </div>
           </Section>
 
-          {/* CONCLUSION (Blade) */}
+          {/* FAQs */}
+          <Section alt>
+            <div id="faqs" />
+            <SectionHeader
+              eyebrow="FAQs"
+              title="Questions students usually ask"
+              subtitle="Straight answers to avoid confusion."
+            />
+
+            <div className="grid gap-6 lg:grid-cols-2">
+              <Reveal>
+                <FaqCard
+                  items={[
+                    {
+                      q: "My Class 12 was in Science. Can I still apply?",
+                      a: "Yes, absolutely. IGNOU doesn't care what stream you studied. Science, Commerce, Arts—doesn't matter. As long as you passed Class 12 from a recognized board, you're eligible for the BA in History program. I've met biology students who switched to history and loved it. Commerce students who realized they preferred humanities. It's never too late to follow your actual interests.",
+                    },
+                    {
+                      q: "Is there any entrance exam I need to prepare for?",
+                      a: "Nope. No entrance test required for BA in History Admission 2026. Admission happens purely based on your Class 12 qualification. Just apply online before the deadline and you're in. This is different from regular colleges where you might need to crack entrance exams. IGNOU believes in open access to education.",
+                    },
+                    {
+                      q: "How do exams happen in distance mode?",
+                      a: "IGNOU holds exams twice yearly, usually around June and December. You go to your assigned exam center and write the papers there. Apart from exams, you also submit assignments throughout the year, and those marks count toward your final grade. The exam pattern is straightforward—mostly descriptive answers where you need to write detailed responses. No tricky multiple choice or confusing formats.",
+                    },
+                  ]}
+                />
+              </Reveal>
+
+              <Reveal>
+                <FaqCard
+                  items={[
+                    {
+                      q: "Can I keep my job while studying?",
+                      a: "That's literally the whole point of distance education. Thousands of working people do IGNOU courses while holding full-time jobs. The study material is designed for self-learning, and exam dates are announced months in advance so you can plan leave or schedule adjustments. Most students study early mornings, late evenings, or weekends. You don't need hours every day—consistent effort of even an hour daily adds up.",
+                    },
+                    {
+                      q: "What happens if I fail a subject?",
+                      a: "Nothing dramatic. You can reappear for that subject in the next exam cycle. IGNOU lets you take backpapers along with your regular semester exams. Since you have six years maximum to finish, there's plenty of time to clear everything. Life happens. You might have a bad semester due to work pressure, family issues, or health problems. The system is flexible enough to accommodate that.",
+                    },
+                    {
+                      q: "Do employers respect IGNOU distance degrees?",
+                      a: "Yes, especially IGNOU degrees. IGNOU is a central university established by Parliament. Its degrees are valid for government jobs, higher studies, and private sector positions. Many successful professionals and civil servants have IGNOU degrees. The stigma around distance learning has reduced significantly because people realize that it takes discipline to complete a degree while managing other responsibilities. Some employers actually value that demonstration of time management and commitment.",
+                    },
+                  ]}
+                />
+              </Reveal>
+            </div>
+          </Section>
+
+          {/* CONCLUSION */}
           <Section alt>
             <div id="conclusion" />
             <SectionHeader
               eyebrow="Conclusion"
               title="What you should do next"
-              subtitle="If you want July 2025 admission, don’t wait till the last week."
+              subtitle="If you want July 2026 admission, don’t wait till the last week."
             />
 
             <div className="grid gap-6 lg:grid-cols-2">
               <Reveal>
                 <Card>
                   <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                    IGNOU BA in History Admission 2025 is a strong choice if you’re genuinely interested in history,
-                    culture, research, and public-facing careers. It’s flexible under NEP 2020, semester-based (CBCS),
-                    interdisciplinary, and has real career value.
+                    IGNOU BA in History Admission 2026 (BAGHIH) makes sense if you actually care about analysis, reading,
+                    research, and careers that reward thinking. The degree is flexible, affordable, and widely valid —
+                    but your results depend on consistency.
                   </p>
                   <p className="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-                    Admissions are open until <b>August 31, 2025</b>. Apply early to avoid avoidable mistakes and delays.
+                    Deadline: <b>August 31, 2026</b>. Apply early so you’re not panicking over document issues at the end.
                   </p>
                   <div className="mt-5 flex flex-wrap gap-3">
-                    <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20BA%20History%20Admission%202025" tone="primary">
+                    <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20BA%20History%20Admission%202026" tone="primary">
                       <WhatsAppIcon className="h-5 w-5" />
                       Start on WhatsApp
                     </CTA>
@@ -468,7 +522,7 @@ export default function BaInHistoryAdmission2025() {
                 </Card>
               </Reveal>
 
-              <Reveal>
+              {/* <Reveal>
                 <Card>
                   <h3 className="font-black text-slate-900 dark:text-white">Resources (buttons)</h3>
                   <p className="mt-2 text-slate-600 dark:text-slate-300">
@@ -501,17 +555,17 @@ export default function BaInHistoryAdmission2025() {
                     </a>
                   </div>
                 </Card>
-              </Reveal>
+              </Reveal> */}
             </div>
           </Section>
 
-          {/* CONTACT (Blade) */}
+          {/* CONTACT */}
           <Section>
             <div id="contact" />
             <SectionHeader
               eyebrow="Contact"
               title="Get Started — Contact Unnati"
-              subtitle="Send your details and we’ll guide you end-to-end."
+              subtitle="Send details and we’ll guide you end-to-end."
             />
 
             <Reveal>
@@ -521,7 +575,7 @@ export default function BaInHistoryAdmission2025() {
                   with admission, documents, assignments, and exam guidance.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-3">
-                  <CTA href="https://wa.me/919355198199" tone="primary">
+                  <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20BA%20History%20Admission%202026" tone="primary">
                     <WhatsAppIcon className="h-5 w-5" />
                     Message
                   </CTA>
@@ -571,58 +625,52 @@ function Hero() {
           {/* Pills */}
           <div className="flex flex-wrap gap-2 mb-4">
             <Pill>IGNOU • ODL</Pill>
-            <Pill>Updated 2025</Pill>
-            <Pill tone="blue">UGC Approved • CBCS</Pill>
+            <Pill>Updated 2026</Pill>
+            <Pill tone="blue">Central University • Flexible</Pill>
           </div>
 
           {/* Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
             IGNOU BA in History
-            <span className="block text-blue-700 dark:text-blue-300">Admission 2025</span>
+            <span className="block text-blue-700 dark:text-blue-300">Admission 2026</span>
           </h1>
 
           <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300">
             Programme Code:{" "}
-            <span className="font-black text-slate-900 dark:text-white">BAFHI / BAGHIH (ODL)</span>
+            <span className="font-black text-slate-900 dark:text-white">BAGHIH (ODL / Distance Learning)</span>
           </p>
 
-          {/* Blade hero content */}
           <div className="mt-4 space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
             <p>
-              The IGNOU BA in History admission 2025 is among the top undergraduate courses for those interested in
-              studying the development of societies, civilizations, and cultural processes. This course is not only for
-              students who love history, but also for those aiming for careers in civil services, research, academia,
-              tourism, archaeology, cultural conservation, and policy development.
+              Are you the kind of person who gets lost in stories about ancient kingdoms, wonders how societies evolved, or wants to understand why the world is the way it is today? If yes, then the BA in History Admission 2026 at IGNOU could be exactly what you're looking for. This isn't about cramming dates for exams. It's about learning to think critically, understanding patterns, and building skills that work in civil services, teaching, research, tourism, and plenty of other fields.
+            </p>
+            {/* <p>
+              The July 2026 session is open, and the deadline is <b>August 31, 2026</b>. The program is semester-based
+              with a flexible credit system, and it includes core history papers plus skill and interdisciplinary courses
+              so you build useful abilities (writing, communication, research, reasoning).
             </p>
             <p>
-              The program aligns with the New Education Policy (NEP) 2020 and follows the Choice-Based Credit System
-              (CBCS), which is semester-based. This makes it more flexible and allows students to pick core classes,
-              skills enhancement courses, interdisciplinary courses, and discipline electives. Admission to the July 2025
-              cycle is open. The deadline for applying is August 31, 2025.
-            </p>
-            <p>
-              Unlike conventional BA programs, this one focuses not only on chronology but also on analysis, comparative
-              studies, and interdisciplinary methods — helping students understand how the past shapes the future in
-              administrative, research, and professional areas.
-            </p>
+              The program works for fresh Class 12 pass-outs, working professionals, parents, and anyone restarting studies.
+              No age bar. Up to 6 years to complete. The only catch: you need consistency.
+            </p> */}
           </div>
 
           {/* Badges */}
           <div className="mt-5 flex flex-wrap gap-2">
             <span className="inline-flex items-center gap-2 rounded-full border border-blue-200/70 bg-blue-50 px-3 py-1 text-xs font-black text-blue-800 dark:border-blue-500/25 dark:bg-blue-500/10 dark:text-blue-200">
-              <CalendarIcon className="h-4 w-4" /> Last Date: 31 Aug 2025
+              <CalendarIcon className="h-4 w-4" /> Last Date: 31 Aug 2026
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white px-3 py-1 text-xs font-black text-slate-700 dark:border-slate-800/60 dark:bg-white/5 dark:text-slate-200">
               <ClockIcon className="h-4 w-4" /> Duration: 3–6 Years
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white px-3 py-1 text-xs font-black text-slate-700 dark:border-slate-800/60 dark:bg-white/5 dark:text-slate-200">
-              <BadgeIcon className="h-4 w-4" /> UGC Approved • CBCS
+              <BadgeIcon className="h-4 w-4" /> Semester + Flexible Credits
             </span>
           </div>
 
           {/* CTAs */}
           <div className="mt-6 flex flex-wrap gap-3">
-            <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20History" tone="primary">
+            <CTA href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20History%202026" tone="primary">
               <WhatsAppIcon className="h-5 w-5" />
               WhatsApp
             </CTA>
@@ -634,7 +682,7 @@ function Hero() {
           </div>
 
           <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
-            Tip: Send <b>“BAFHI 2025”</b> on WhatsApp for faster response.
+            Tip: Send <b>“BA History 2026”</b> on WhatsApp for faster response.
           </p>
         </div>
       </div>
@@ -790,7 +838,16 @@ function ContentCard({ title, paragraphs = [], bullets = [], footer }) {
           ))}
         </ul>
       ) : null}
-      {footer ? <p className="mt-4 text-slate-600 dark:text-slate-300">{footer}</p> : null}
+      {footer
+		? Array.isArray(footer)
+			? footer.map((f, i) => (
+				<p key={i} className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+				{f}
+				</p>
+			))
+			: <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">{footer}</p>
+		: null}
+
     </Card>
   );
 }
@@ -856,6 +913,204 @@ function SyllabusTable({ title, rows }) {
   );
 }
 
+/* ---------------- SMALL HELPERS ---------------- */
+
+function MiniNote({ title, text }) {
+  return (
+    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+      <div className="font-black text-slate-900 dark:text-white">{title}</div>
+      <div className="mt-1 text-slate-600 dark:text-slate-300">{text}</div>
+    </div>
+  );
+}
+
+
+function SyllabusAccordion() {
+    const [openSemester, setOpenSemester] = useState(null);
+
+    const semesters = [
+        {
+            id: 1,
+            title: "Semester 1",
+            rows: [
+                ["Core", "History of India – I", "BHIC-101", "6"],
+                ["Core", "Social Formations and Cultural Patterns of the Ancient World", "BHIC-102", "6"],
+                ["AECC", "Environmental Studies", "BEVAE-181", "4"],
+                ["Interdisciplinary", "Disaster Management", "BPAG-171", "6"],
+            ]
+        },
+        {
+            id: 2,
+            title: "Semester 2",
+            rows: [
+                ["Core", "History of India – II", "BHIC-103", "6"],
+                ["Core", "Social Formations and Cultural Patterns of the Medieval World", "BHIC-104", "6"],
+                ["AECC", "English Communication OR Hindi Bhasha aur Sampreshan (Choose 1)", "BEGAE-182 / BHDAE-182", "4"],
+                ["GE", "Media & Communication Skills / Disaster Management / Philosophy of Religion / Indian Society (Choose 1)", "BEGG-172 / BPAG-172 / BPYG-172 / BSOG-171", "6"],
+            ]
+        },
+        {
+            id: 3,
+            title: "Semester 3",
+            rows: [
+                ["Core", "History of India – III (c. 750 – 1206 CE)", "BHIC-105", "6"],
+                ["Core", "Rise of the Modern West – I", "BHIC-106", "6"],
+                ["Interdisciplinary", "History of India: Earliest Times to c. 300 BCE", "BHID-101", "6"],
+                ["SEC", "Emotional Intelligence / Counselling Psychology / Psychology for Living / Academic Writing (Choose 1)", "BPCS-183 / BPCS-185 / BPCG-175 / BEGG-173", "4"],
+            ]
+        },
+        {
+            id: 4,
+            title: "Semester 4",
+            rows: [
+                ["Core", "History of India – IV (c. 1206 – 1550 CE)", "BHIC-107", "6"],
+                ["Core", "Rise of the Modern West – II", "BHIC-108", "6"],
+                ["Interdisciplinary", "History of India: c. 300 BCE – 8th Century CE", "BHID-102", "6"],
+                ["SEC", "Emotional Intelligence / Managing Stress / Writing Skills / Tourism Anthropology / Computer Apps / Leadership (Choose 1)", "BPCS-183 / BPCS-185 / BEGS-183 / BANS-183 / BCOS-183 / BPCS-187", "4"],
+            ]
+        },
+        {
+            id: 5,
+            title: "Semester 5",
+            rows: [
+                ["Core", "History of India – V (c. 1550 – 1605 CE)", "BHIC-109", "6"],
+                ["Interdisciplinary", "History of India: 8th to 15th Century CE", "BHID-103", "6"],
+                ["DSE-1", "USA (1776–1945) / USSR (1917–1964) / Africa (1500–1960) (Choose 1)", "BHIE-141 / BHIE-143 / BHIE-145", "6"],
+                ["DSE-2", "USA (1776–1945) / USSR (1917–1964) / Africa (1500–1960) (Choose 1)", "BHIE-141 / BHIE-143 / BHIE-145", "6"],
+            ]
+        },
+        {
+            id: 6,
+            title: "Semester 6",
+            rows: [
+                ["Core", "History of India – VI (c. 1750 – 1857 CE)", "BHIC-110", "6"],
+                ["Interdisciplinary", "History of India: 16th to Mid-18th Century CE", "BHID-104", "6"],
+                ["DSE-3", "Southeast Asia (19th–20th) / China & Japan (1840–1949) / Modern Europe (1780–1939) (Choose 1)", "BHIE-142 / BHIE-144 / BHIE-146", "6"],
+                ["DSE-4", "Southeast Asia (19th–20th) / China & Japan (1840–1949) / Modern Europe (1780–1939) (Choose 1)", "BHIE-142 / BHIE-144 / BHIE-146", "6"],
+            ]
+        }
+    ];
+
+    return (
+        <div className="space-y-3">
+            {semesters.map((semester) => (
+                <div
+                    key={semester.id}
+                    className="rounded-2xl border border-slate-200/80 bg-white/90 backdrop-blur-sm overflow-hidden dark:border-white/10 dark:bg-[#0b1220]/70"
+                >
+                    <button
+                        onClick={() => setOpenSemester(openSemester === semester.id ? null : semester.id)}
+                        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="grid h-10 w-10 place-items-center rounded-xl bg-blue-600 text-white font-black">
+                                {semester.id}
+                            </div>
+                            <h3 className="text-lg font-black text-slate-900 dark:text-white">
+                                {semester.title}
+                            </h3>
+                        </div>
+                        <svg
+                            className={`h-5 w-5 text-slate-400 transition-transform ${
+                                openSemester === semester.id ? "rotate-180" : ""
+                            }`}
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path d="M7.4 8.6a1 1 0 0 1 1.4 0L12 11.8l3.2-3.2a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z" />
+                        </svg>
+                    </button>
+
+                    {openSemester === semester.id && (
+                        <div className="px-6 pb-5 border-t border-slate-200/80 dark:border-white/10">
+                            <div className="overflow-x-auto mt-4">
+                                <table className="w-full text-left text-sm">
+                                    <thead>
+                                        <tr className="border-b border-slate-200/80 dark:border-white/10">
+                                            <th className="py-3 pr-4 font-black">TYPE</th>
+                                            <th className="py-3 pr-4 font-black">SUBJECTS</th>
+                                            <th className="py-3 pr-4 font-black">CODE</th>
+                                            <th className="py-3 font-black">CREDITS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
+                                        {semester.rows.map((r, i) => (
+                                            <tr key={i}>
+                                                <td className="py-3 pr-4 font-semibold whitespace-nowrap">
+                                                    {r[0]}
+                                                </td>
+                                                <td className="py-3 pr-4 min-w-[320px]">
+                                                    {r[1]}
+                                                </td>
+                                                <td className="py-3 pr-4 whitespace-nowrap">
+                                                    {r[2]}
+                                                </td>
+                                                <td className="py-3 font-black whitespace-nowrap">
+                                                    {r[3]}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            ))}
+        </div>
+    );
+}
+
+function FaqCard({ items = [] }) {
+  const [open, setOpen] = useState(0);
+
+  return (
+    <div className="rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-6 shadow-sm dark:border-white/10 dark:bg-[#0b1220]/70">
+      <div className="space-y-3">
+        {items.map((it, idx) => {
+          const active = open === idx;
+          return (
+            <button
+              key={idx}
+              type="button"
+              onClick={() => setOpen(active ? -1 : idx)}
+              className="w-full text-left"
+            >
+              <div
+                className={[
+                  "rounded-2xl border",
+                  "border-slate-200/80 dark:border-white/10",
+                  "bg-slate-50 dark:bg-white/5",
+                  "px-4 py-4",
+                  "transition",
+                  active ? "shadow-sm" : "",
+                ].join(" ")}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="font-black text-slate-900 dark:text-white">{it.q}</div>
+                  <span
+                    className={[
+                      "mt-[2px] grid h-7 w-7 place-items-center rounded-lg",
+                      "bg-slate-900 text-white dark:bg-white/90 dark:text-slate-900",
+                      "shrink-0",
+                    ].join(" ")}
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                      <path d={active ? "M6 12h12v2H6z" : "M11 6h2v5h5v2h-5v5h-2v-5H6v-2h5z"} />
+                    </svg>
+                  </span>
+                </div>
+                {active ? <p className="mt-2 text-slate-600 dark:text-slate-300 leading-relaxed">{it.a}</p> : null}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 /* ---------------- CTA & HELPERS ---------------- */
 
 function CTA({ href, children, tone = "primary" }) {
@@ -897,14 +1152,17 @@ function MobileStickyCTA() {
     <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-t border-slate-200 dark:bg-[#070A12]/90 dark:border-white/10">
       <div className="flex gap-3 p-4">
         <a
-          href="https://wa.me/919355198199"
+          href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20BA%20History%20Admission%202026"
           className="flex-1 bg-blue-600 text-white rounded-xl py-3 text-center font-black"
           target="_blank"
           rel="noreferrer"
         >
           WhatsApp
         </a>
-        <a href="tel:+919355198199" className="flex-1 border rounded-xl py-3 text-center font-black dark:border-white/20">
+        <a
+          href="tel:+919355198199"
+          className="flex-1 border rounded-xl py-3 text-center font-black dark:border-white/20"
+        >
           Call
         </a>
       </div>
