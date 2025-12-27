@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import UserLayout from "@/Layouts/UserLayout";
 import Seo from "@/Components/Seo";
 
-export default function BaEconomicsAdmission2025() {
+export default function BaEconomicsAdmission2026() {
     const infoTiles = useMemo(
         () => [
             {
@@ -68,8 +68,8 @@ export default function BaEconomicsAdmission2025() {
     return (
         <UserLayout>
             <Seo
-                title="BA in Economics Admission | BAFEC Guide – Unnati"
-                description="We explain IGNOU BA in Economics Admission for BAFEC with clear rules, dates, and eligibility. We guide students from form filling to exams with simple."
+                title="IGNOU BA in Economics Admission 2026: Your Complete Guide to Getting Started"
+                description="Looking to study economics but need flexibility? IGNOU's BA in Economics might be exactly what you need. This three-year program lets you study at your own pace while earning a UGC-recognized degree."
                 keywords="BA in Economics Admission, BAFEC, IGNOU BA Economics, IGNOU Economics Admission 2026, Unnati Education"
             />
 
@@ -86,13 +86,13 @@ export default function BaEconomicsAdmission2025() {
                     {/* HERO */}
                     <Hero />
 
-                    {/* OVERVIEW */}
+                    {/* QUICK OVERVIEW */}
                     <Section>
                         <div id="overview" />
                         <SectionHeader
-                            eyebrow="Overview"
-                            title="Overview and Highlights"
-                            subtitle="Programme snapshot + what you get with Unnati’s admission-to-exam support."
+                            eyebrow="Quick Overview"
+                            title="What You Need to Know"
+                            subtitle="Complete programme snapshot with all essential details at a glance."
                         />
 
                         <RevealGrid cols="lg:grid-cols-4">
@@ -110,586 +110,810 @@ export default function BaEconomicsAdmission2025() {
                                         <thead>
                                             <tr className="border-b border-slate-200/80 dark:border-white/10">
                                                 <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
-                                                    Feature
+                                                    Information
                                                 </th>
                                                 <th className="py-3 font-black text-slate-700 dark:text-slate-200">
-                                                    Details
+                                                    Programme Details
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
                                             <Row k="Programme Code" v="BAFEC" />
                                             <Row
-                                                k="Programme Name"
-                                                v="Bachelor of Arts , Economics"
+                                                k="Full Name"
+                                                v="Bachelor of Arts in Economics (Honours)"
                                             />
                                             <Row
-                                                k="Programme Type"
-                                                v="Honors Degree"
+                                                k="Learning Mode"
+                                                v="Open and Distance Learning"
                                             />
                                             <Row
-                                                k="Mode"
-                                                v="Open and Distance Learning (ODL)"
-                                            />
-                                            <Row
-                                                k="The School"
-                                                v="School of Social Sciences"
+                                                k="Offered By"
+                                                v="School of Social Sciences, IGNOU"
                                             />
                                             <Row
                                                 k="Duration"
-                                                v="Minimum 3 Years – Maximum 6 Years"
+                                                v="3 to 6 Years"
                                             />
                                             <Row
-                                                k="Medium of Instruction"
-                                                v="English & Hindi"
-                                            />
-                                            <Row k="Specialization" v="—" />
-                                            <Row
-                                                k="Eligibility"
-                                                v="10+2 (or equivalent)"
+                                                k="Study Material"
+                                                v="English and Hindi"
                                             />
                                             <Row
-                                                k="Support Partner"
-                                                v="Unnati Education – Complete Admission-to-Exam Guidance"
+                                                k="Minimum Qualification"
+                                                v="10+2 from any stream"
+                                            />
+                                            <Row
+                                                k="Total Credits"
+                                                v="148 Credits"
+                                            />
+                                            <Row
+                                                k="Recognition"
+                                                v="UGC Approved"
+                                            />
+                                            <Row
+                                                k="Admission Partner"
+                                                v="Unnati Education"
                                             />
                                         </tbody>
                                     </table>
                                 </div>
-
-                                <p className="mt-4 text-slate-600 dark:text-slate-300">
-                                    This program suits learners who are looking for flexibility without sacrificing quality. IGNOU’s BA Economics is perfect for students who want to learn at their own pace.
-
-                                </p>
-                                <p className="mt-3 text-slate-600 dark:text-slate-300">
-                                    Unnati Education helps you to avoid confusion and delays. We help you at every stage, from eligibility confirmation to assignment completion, exam preparation to exam prep.
-
-                                </p>
                             </Card>
                         </Reveal>
                     </Section>
 
-                    {/* HIGHLIGHTS */}
+                    {/* WHY CHOOSE IGNOU */}
                     <Section alt>
-                        <div id="highlights" />
+                        <div id="why-choose" />
                         <SectionHeader
-                            eyebrow="Highlights"
-                            title="Why IGNOU BA Economics (BAFEC)?"
-                            subtitle="IGNOU BA Economics is a flexible course that offers structured discipline. The IGNOU BA Economics degree is for students who want autonomy and accountability. What makes it special?"
+                            eyebrow="Why Choose IGNOU"
+                            title="Why Choose IGNOU for Your BA in Economics Admission 2026?"
+                            subtitle="Understanding what makes IGNOU's BA Economics program stand out from the rest."
                         />
 
                         <div className="grid gap-6 lg:grid-cols-2">
                             <Reveal>
                                 <ContentCard
-                                    title="What makes this program special?"
+                                    title="A Degree That Actually Counts"
                                     paragraphs={[
-                                        "IGNOU BA Economics is flexible, but still structured — ideal for students who want autonomy with a clear academic roadmap.",
-                                    ]}
-                                    bullets={[
-                                        {
-                                            b: "Recognized, respected, and treated with respect:",
-                                            t: "The University Grants Commission recognizes the degree as a valid qualification for employment in the government, private sector, and internationally. Graduates of this program are eligible to pursue postgraduate education, civil-service exams, or research programs throughout India.",
-                                        },
-                                        {
-                                            b: "Flexibility that fits you:",
-                                            t: "You can finish the program in just three years or as long as six. The ODL model allows you to learn from anywhere, through print materials, online resources, or interactive sessions. Attendance or relocation is not a requirement.",
-                                        },
-                                        {
-                                            b: "Affordable and accessible:",
-                                            t: "IGNOU offers a cost structure that is among the lowest in India while providing a level of quality comparable with top national universities. Students from all backgrounds - including rural or working-class learners - can access world-class Economics education.",
-                                        },
-                                        {
-                                            b: "4. Curriculum Aligned to NEP 2026:",
-                                            t: "MThe New Education Policy emphasizes flexibility, multidisciplinary learning, and skills development. IGNOU's BAFEC program is updated to incorporate these principles. It prepares you both for academic growth and job relevance.",
-                                        },
-                                        {
-                                            b: "Unnati Education provides comprehensive support for Unnati Education:",
-                                            t: "Many students are not struggling because they lack guidance, but because they do not have the right information. Unnati Education can bridge that gap. We provide you with assistance at every step -- from selecting subjects to preparing for exams, completing assignments, or re-registering. No need to struggle with the digital process on your own. We will handle all the logistics. You can concentrate on learning and growing.",
-                                        },
+                                        "Let me be honest with you. When people hear \"distance learning,\" some still raise their eyebrows. But IGNOU is different. This is not just another distance learning certificate that employers ignore. IGNOU's BA Economics degree holds the same weight as regular university degrees across India and abroad.",
+                                        "You can appear for UPSC exams with this degree. Government departments accept it for job applications. Private companies recognize it. Universities worldwide consider it valid for master's admissions. Why? Because IGNOU was established by an Act of Parliament in 1985 and is recognized by the University Grants Commission. That official stamp matters when you're building your career.",
+                                        "Think about it this way—you get the same degree value without spending three years sitting in a classroom every single day. That's the real advantage here."
                                     ]}
                                 />
                             </Reveal>
 
-                            <Reveal>
-                                <Card>
-                                    <h3 className="font-black text-slate-900 dark:text-white">
-                                        IGNOU Bachelor of Economics Admissions 2026 (tentative date)
-                                    </h3>
-                                    {/* <p className="mt-2 text-slate-600 dark:text-slate-300 leading-relaxed">
-                                        The IGNOU BA Economics 2026 Admission session is <b>expected to open in July 2026</b>, with <b>the tentative closing date of 30th September 2026.</b> Missing the deadline can delay your academic progress by up to 6 months.
-                                    </p> */}
-                                    <ul className="mt-4 space-y-3">
-                                        <CheckItem text="The IGNOU BA Economics 2026 Admission session is expected to open in July 2026, with the tentative closing date of 30th September 2026. Missing the deadline can delay your academic progress by up to 6 months." />
-                                        <CheckItem text="Openness is a great way to allow students who cannot attend a traditional university due to personal, geographical, or financial barriers to earn prestigious degrees." />
-                                    </ul>
-                                    <p className="mt-4 text-slate-600 dark:text-slate-300">
-                                        Unnati Education is committed to ensuring that each student's eligibility, documents, and enrollment are smooth without technical difficulties.
-                                    </p>
-                                </Card>
-                            </Reveal>
-                        </div>
-
-                        <div className="mt-6 grid gap-6 lg:grid-cols-2">
                             <Reveal>
                                 <ContentCard
-                                    title="Criteria for Eligibility"
+                                    title="Learn Without Leaving Your Job"
                                     paragraphs={[
-                                        "The admission criteria are inclusive and simple:",
+                                        "Here's a common problem. You're working in a job that pays your bills. You want to study further, but taking three years off is not realistic. Your family depends on your income. Or maybe you're helping with a family business during the day. Traditional college just does not fit into your life.",
+                                        "IGNOU solves this exact problem. Study early morning before heading to work. Read your materials during lunch breaks. Watch video lectures late at night when everyone's asleep. Prepare for exams on weekends. The flexibility is real, not just marketing talk.",
+                                        "I've seen students juggle full-time jobs and complete this program successfully. One student worked in a bank during the day and studied economics at night. Today, he's a senior analyst in the same bank. Another student managed her father's retail shop while pursuing this degree. She now handles all the financial planning for their expanded business. These are real stories, and they're possible because IGNOU understands that adult learners have responsibilities.",
+                                        "No daily attendance. No rigid 9-to-3 schedule. No feeling guilty about missing classes because your child fell sick or your boss needed you for an urgent project. You control your learning schedule completely."
                                     ]}
-                                    bullets={[
-                                        {
-                                            t: "The candidate should have passed 10+2 from an accredited board or equivalent.",
-                                        },
-                                        {
-                                            t: "No stream restrictions apply to this program, so it is open to all students, regardless of their background.",
-                                        },
-                                        {
-                                            t: "IGNOU has a flexible schedule that allows for both working professionals and students to pursue other courses.",
-                                        },
-                                    ]}
-                                    footer="Openness is a great way to allow students who cannot attend a traditional university due to personal, geographical, or financial barriers to earn prestigious degrees.
-                                            Unnati Education is committed to ensuring that each student's eligibility, documents, and enrollment are smooth without technical difficulties."
                                 />
                             </Reveal>
 
                             <Reveal>
-                                <div className="rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-6 shadow-sm dark:border-white/10 dark:bg-[#0b1220]/70">
-                                    <h3 className="font-black text-slate-900 dark:text-white">
-                                        Quick next steps
-                                    </h3>
-                                    <p className="mt-1 text-slate-600 dark:text-slate-300">
-                                        If you’re serious, don’t “save it for
-                                        later”. Most mistakes happen in form
-                                        filling + subject choice.
-                                    </p>
+                                <ContentCard
+                                    title="Affordable Education for Everyone"
+                                    paragraphs={[
+                                        "Let's talk money. Education in India has become expensive. Private universities charge lakhs of rupees for a three-year degree. Even government colleges have fees that middle-class families struggle to afford. Add hostel costs, transportation, food, and other expenses—it becomes overwhelming.",
+                                        "IGNOU keeps costs dramatically lower. You pay only for what you study, and the payment structure spreads across semesters. There are no hidden charges, no sudden fee hikes, no capitation fees. The university's mission is to make quality education accessible, not to maximize profits.",
+                                        "For families where every rupee counts, this matters enormously. You can afford a recognized degree without taking loans or selling assets. Education should not force financial stress on families, and IGNOU ensures it doesn't."
+                                    ]}
+                                />
+                            </Reveal>
 
-                                    <div className="mt-4 grid gap-4">
-                                        <StepMini
-                                            n="01"
-                                            title="Confirm eligibility + documents"
-                                            desc="10+2 proof, ID, photo/signature, etc."
-                                        />
-                                        <StepMini
-                                            n="02"
-                                            title="Choose programme + centre"
-                                            desc="Pick correctly so you don’t regret it later."
-                                        />
-                                        <StepMini
-                                            n="03"
-                                            title="Plan assignments + exams"
-                                            desc="Don’t wait for deadlines to become chaos."
-                                        />
-                                    </div>
-
-                                    <div className="mt-5 flex flex-wrap gap-3">
-                                        <CTA
-                                            href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20Economics"
-                                            tone="primary"
-                                        >
-                                            <WhatsAppIcon className="h-5 w-5" />
-                                            WhatsApp Guidance
-                                        </CTA>
-                                        <CTA
-                                            href="tel:+919355198199"
-                                            tone="ghost"
-                                        >
-                                            <PhoneIcon className="h-5 w-5" />
-                                            Call Now
-                                        </CTA>
-                                    </div>
-                                </div>
+                            <Reveal>
+                                <ContentCard
+                                    title="Updated According to National Education Policy 2020"
+                                    paragraphs={[
+                                        "The government introduced NEP 2020 to modernize Indian education. The policy emphasizes practical skills alongside theory, multidisciplinary learning, and flexible credit systems. Many universities are still figuring out how to implement these changes. IGNOU has already adapted.",
+                                        "The BA Economics program follows the Choice-Based Credit System that NEP recommends. You get core economics courses plus the freedom to choose electives based on your interests. Want to understand psychology along with economics? Choose psychology as your elective. Interested in media and communication? That's available too.",
+                                        "This approach makes you well-rounded. Employers today want people who understand multiple fields, not just narrow specialists. The curriculum prepares you for the real world where problems don't fit neatly into single-subject boxes.",
+                                        "You learn concepts and also understand how to apply them in real situations. Case studies, practical assignments, and project work connect theory to reality. This is not about memorizing definitions and forgetting them after exams. It's about building genuine understanding that stays with you throughout your career."
+                                    ]}
+                                />
                             </Reveal>
                         </div>
+
+                        <div className="mt-6" />
+
+                        <Reveal>
+                            <Card>
+                                <h3 className="text-2xl font-black text-slate-900 dark:text-white">
+                                    Complete Support from Unnati Education
+                                </h3>
+                                <div className="mt-3 space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
+                                    <p>
+                                        Here's where many distance learning students struggle. IGNOU's systems are good, but navigating online portals, understanding credit requirements, remembering deadlines, filling forms correctly—it overwhelms people. Students miss deadlines because they didn't check the website. They submit wrong documents and face delays. They don't know whom to ask when problems arise.
+                                    </p>
+                                    <p>
+                                        This is exactly where Unnati Education steps in. We become your dedicated support team from day one. Think of us as that helpful friend who knows all the procedures and deadlines, who reminds you what needs to be done, who helps you avoid mistakes.
+                                    </p>
+                                    <p>
+                                        We handle the paperwork headaches so you can focus on actual learning. We remind you about deadlines before they sneak up on you. We help with assignments—not by doing your work, but by guiding you on structure, formatting, and requirements. We prepare you for exams with strategies that work. We assist with re-registration every semester so you don't accidentally miss it.
+                                    </p>
+                                    <p>
+                                        From your first inquiry until you receive your final degree certificate, we stay with you. Your success becomes our goal. We've helped hundreds of students complete their IGNOU programs smoothly, and we bring all that experience to support you.
+                                    </p>
+                                </div>
+
+                                <div className="mt-6 flex flex-wrap gap-3">
+                                    <CTA
+                                        href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20Economics"
+                                        tone="primary"
+                                    >
+                                        <WhatsAppIcon className="h-5 w-5" />
+                                        Get Support on WhatsApp
+                                    </CTA>
+                                    <CTA href="tel:+919355198199" tone="ghost">
+                                        <PhoneIcon className="h-5 w-5" />
+                                        Call for Guidance
+                                    </CTA>
+                                </div>
+                            </Card>
+                        </Reveal>
                     </Section>
 
-                    {/* SYLLABUS */}
+                    {/* WHAT MAKES THIS PROGRAM DIFFERENT */}
                     <Section>
+                        <div id="program-features" />
+                        <SectionHeader
+                            eyebrow="Program Features"
+                            title="What Makes This Economics Program Different?"
+                            subtitle="Understanding the unique aspects that set this program apart."
+                        />
+
+                        <div className="grid gap-6 lg:grid-cols-2">
+                            <Reveal>
+                                <ContentCard
+                                    title="Strong Foundation in Economic Thinking"
+                                    paragraphs={[
+                                        "Economics is everywhere around you, even if you don't realize it. When petrol prices increase, that's economics. When the government announces a new budget, that's economics. When you decide whether to save money or spend it, that's an economic choice. When companies launch products at specific prices, they're using economic principles.",
+                                        "This program teaches you to see and understand these patterns. You start with basics—how individuals make choices when resources are limited, how prices form in markets, why some goods are expensive while others are cheap. Then you move to bigger questions—how economies grow, what causes unemployment, how inflation works, why countries trade with each other.",
+                                        "By the end of six semesters, you think differently. You read a newspaper and understand the economic logic behind policy decisions. You watch news about stock markets and comprehend what's actually happening. You analyze business situations and identify the economic forces at play. This shift in thinking is powerful, and it stays with you forever."
+                                    ]}
+                                />
+                            </Reveal>
+
+                            <Reveal>
+                                <ContentCard
+                                    title="Practical Skills That Employers Want"
+                                    paragraphs={[
+                                        "Companies don't just want people who studied economics theory. They need employees who can actually do things with that knowledge. This program focuses heavily on practical skills.",
+                                        "You learn to read and interpret data correctly—taking raw numbers and finding meaningful patterns. You study statistics and econometrics, which teach you how to test whether something really causes something else or if it's just coincidence. You practice forecasting—predicting what might happen next based on current trends.",
+                                        "These skills are valuable everywhere. Banks need them for credit analysis. Consulting firms need them for advising clients. Government departments need them for policy planning. Even small businesses need them for understanding their markets better.",
+                                        "Modern employers also want people comfortable with technology. This program includes computer applications and data analysis techniques. You learn software tools that economists actually use in professional settings. By graduation, you're job-ready, not just theoretically educated."
+                                    ]}
+                                />
+                            </Reveal>
+                        </div>
+
+                        <div className="mt-6" />
+
+                        <Reveal>
+                            <Card>
+                                <h3 className="text-2xl font-black text-slate-900 dark:text-white">
+                                    Multiple Career Paths Available
+                                </h3>
+                                <div className="mt-3 space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
+                                    <p>
+                                        One beautiful thing about economics—it opens many different doors. You're not locked into one career path.
+                                    </p>
+                                </div>
+
+                                <div className="mt-6 grid gap-4">
+                                    <CareerPathCard
+                                        title="Banking and Finance"
+                                        description="Banks constantly hire economics graduates. You could join as a probationary officer and grow into management. You could work in credit departments evaluating loan applications. You could join investment banking and analyze market opportunities. Your understanding of interest rates, inflation, and financial systems makes you valuable here."
+                                    />
+                                    <CareerPathCard
+                                        title="Government Services"
+                                        description="If serving the public interests you, economics provides an excellent foundation. Prepare for Indian Economic Service and work on national economic policies. Join the Civil Services and contribute to administration with economic insight. State government departments need economists for planning and budgeting. The skills you develop in this program directly help with these competitive exams."
+                                    />
+                                    <CareerPathCard
+                                        title="Corporate Sector"
+                                        description="Private companies need economic analysis constantly. Market research teams study consumer behavior and competition. Business analytics teams forecast sales and identify growth opportunities. Strategy teams evaluate expansion decisions. Your economics training helps you excel in these roles."
+                                    />
+                                    <CareerPathCard
+                                        title="Development Organizations"
+                                        description="NGOs, international bodies like the World Bank or UN agencies, and social enterprises need economists who understand development. You could work on poverty reduction programs, sustainable development projects, or social impact assessment. This path suits people who want their work to make a direct difference in society."
+                                    />
+                                    <CareerPathCard
+                                        title="Research and Teaching"
+                                        description="Love deep analysis and want to contribute to knowledge? Pursue higher studies after this degree. Complete an MA, then MPhil and PhD. Join universities as faculty. Work in research institutions. Publish papers that influence policy. Academic careers offer intellectual satisfaction and stability."
+                                    />
+                                    <CareerPathCard
+                                        title="Data Analytics"
+                                        description="Technology companies increasingly value economists. Your training in data analysis, statistical thinking, and causal reasoning makes you effective in data science roles. Many economics graduates transition into analytics positions at tech firms, e-commerce companies, and startups. The combination of economic thinking and data skills is rare and highly valued."
+                                    />
+                                </div>
+
+                                <div className="mt-6 p-4 rounded-2xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200/70 dark:border-blue-500/25">
+                                    <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
+                                        <strong className="text-blue-900 dark:text-blue-100">The point is this</strong>—you're not choosing a narrow career when you study economics. You're building versatile skills that work across industries and sectors.
+                                    </p>
+                                </div>
+                            </Card>
+                        </Reveal>
+                    </Section>
+
+                    {/* COMPLETE COURSE STRUCTURE */}
+                    <Section alt>
                         <div id="syllabus" />
                         <SectionHeader
-                            eyebrow="Syllabus"
-                            title="IGNOU BA Economics Syllabus"
-                            subtitle="Semester-wise structure (CC/AECC/GE/SEC/DSE)."
+                            eyebrow="Course Structure"
+                            title="Complete Course Structure"
+                            subtitle="The program is organized into six semesters with a careful progression from basics to advanced topics."
                             rightCTA={
                                 <CTA
-                                    href="https://wa.me/919355198199"
+                                    href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20Need%20Full%20Syllabus%20Details"
                                     tone="primary"
                                 >
-                                    <WhatsAppIcon className="h-5 w-5" /> Ask for
-                                    Full Details
+                                    <WhatsAppIcon className="h-5 w-5" /> Get Full Details
                                 </CTA>
                             }
                         />
 
-                        <div className="grid gap-6 lg:grid-cols-2">
-                            <Reveal>
-                                <SyllabusTable
-                                    title="Semester 1"
-                                    rows={[
-                                        [
-                                            "CC",
-                                            "Introductory Microeconomics",
-                                            "BECC-101",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Mathematical Methods for Economics I",
-                                            "BECC-102",
-                                            "6",
-                                        ],
-                                        [
-                                            "AECC",
-                                            "Environmental Studies",
-                                            "BEVAE-181",
-                                            "4",
-                                        ],
-                                        [
-                                            "GE",
-                                            "(Any 1) Indian Society: Images and Realities / General Psychology / Media and Communication Skills / Disaster Management / Applied Ethics / Understanding Ambedkar / भारतीय सौंदर्यम शास्त्र / National Cadet Corps",
-                                            "BSOG-171 / BPCG-171 / BEGG-171 / BPAG-171 / BPYG-171 / BABG-171 / BSKG-171 / ONR-003",
-                                            "6",
-                                        ],
-                                    ]}
-                                />
-                            </Reveal>
-
-                            <Reveal>
-                                <SyllabusTable
-                                    title="Semester 2"
-                                    rows={[
-                                        [
-                                            "CC",
-                                            "Introductory Macroeconomics",
-                                            "BECC-103",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Mathematical Methods for Economics II",
-                                            "BECC-104",
-                                            "6",
-                                        ],
-                                        [
-                                            "AECC",
-                                            "(Any 1) English Communication Skills / हिंदी भाषा और संप्रेषण",
-                                            "BEGAE-182 / BHDAE-182",
-                                            "4",
-                                        ],
-                                        [
-                                            "GE",
-                                            "(Any 1) भारतीय दर्शन के मूल सिद्धांत / Governance: Issues and Challenges / Psychology & Media / Language & Linguistics / Gender Sensitization: Society and Culture / Philosophy of Religion",
-                                            "BSKG-172 / BPAG-172 / BPCG-172 / BEGG-172 / BGDG-172 / BPYG-172",
-                                            "6",
-                                        ],
-                                    ]}
-                                />
-                            </Reveal>
-
-                            <Reveal>
-                                <SyllabusTable
-                                    title="Semester 3"
-                                    rows={[
-                                        [
-                                            "CC",
-                                            "Intermediate Microeconomics I",
-                                            "BECC-105",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Intermediate Macroeconomics I",
-                                            "BECC-106",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Statistical Methods for Economics",
-                                            "BECC-107",
-                                            "6",
-                                        ],
-                                        [
-                                            "SEC",
-                                            "(Any 1) Tourism Anthropology / Emotional Intelligence / Developing Emotional Competence / समाचार लेखन / Writing & Study Skills / English Language Teaching / Managing HR / Life Skills / Computer Application in Business",
-                                            "BANS-183 / BPCS-183 / BPCS-185 / BHDS-183 / BEGS-183 / BEGS-185 / BPCS-187 / BSSS-183 / BCOS-183",
-                                            "4",
-                                        ],
-                                        [
-                                            "GE",
-                                            "(Any 1) E-Governance / Psychology for Health and Well-being / Rethinking Development / Hindi Patrakarita / Academic Writing & Composition / आधार संस्कृत",
-                                            "BPAG-173 / BPCG-173 / BSOG-173 / BHDG-173 / BEGG-173 / BSKG-173",
-                                            "6",
-                                        ],
-                                    ]}
-                                />
-                            </Reveal>
-
-                            <Reveal>
-                                <SyllabusTable
-                                    title="Semester 4"
-                                    rows={[
-                                        [
-                                            "CC",
-                                            "Intermediate Microeconomics II",
-                                            "BECC-108",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Intermediate Macroeconomics II",
-                                            "BECC-109",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Introductory Econometrics",
-                                            "BECC-110",
-                                            "6",
-                                        ],
-                                        [
-                                            "SEC",
-                                            "(Any 1) Logistics Management/ Public Health and Epidemiology / Data Analysis / Managing Stress / School Psychology / Application of Social Psychology / Managing HR / Business Communication / Creative Writing / Society through the Visual / Techniques of Ethnographic Filmmaking",
-                                            "BPAS-184 / BANS-184 / BECS-184 / BPCS-186 / BPCS-184 / BPCS-188 / BPCS-187 / BEGS-186 / BEGG-174 / BSOS-185 / BSOS-184",
-                                            "4",
-                                        ],
-                                        [
-                                            "GE",
-                                            "(Any 1) E-Governance / Psychology & Media / Psychology of Gender / Sustainable Development / Creative Writing",
-                                            "BPAG-174 / BPCG-174 / BPCG-176 / BPAG-174 / BEGG-174",
-                                            "6",
-                                        ],
-                                    ]}
-                                />
-                            </Reveal>
-
-                            <Reveal>
-                                <SyllabusTable
-                                    title="Semester 5"
-                                    rows={[
-                                        [
-                                            "CC",
-                                            "Indian Economy – I",
-                                            "BECC-111",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Development Economics",
-                                            "BECC-112",
-                                            "6",
-                                        ],
-                                        [
-                                            "DSE-1",
-                                            "(Any 1) Environmental Economics / Money and Banking",
-                                            "BECE-141 / BECE-143",
-                                            "6",
-                                        ],
-                                        [
-                                            "DSE-2",
-                                            "(Any 1) Environmental Economics / Money and Banking",
-                                            "BECE-141 / BECE-143",
-                                            "6",
-                                        ],
-                                    ]}
-                                />
-                            </Reveal>
-
-                            <Reveal>
-                                <SyllabusTable
-                                    title="Semester 6"
-                                    rows={[
-                                        [
-                                            "CC",
-                                            "Indian Economy – II",
-                                            "BECC-113",
-                                            "6",
-                                        ],
-                                        [
-                                            "CC",
-                                            "Applied Econometrics",
-                                            "BECC-114",
-                                            "6",
-                                        ],
-                                        [
-                                            "DSE-3",
-                                            "(Any 1) Public Finance / International Economics",
-                                            "BECE-142 / BECE-144",
-                                            "6",
-                                        ],
-                                        [
-                                            "DSE-4",
-                                            "(Any 1) Public Finance / International Economics",
-                                            "BECE-142 / BECE-144",
-                                            "6",
-                                        ],
-                                    ]}
-                                />
-                            </Reveal>
-                        </div>
+                        <Reveal>
+                            <SyllabusAccordion />
+                        </Reveal>
 
                         <div className="mt-8" />
 
                         <Reveal>
                             <Card>
                                 <h3 className="text-2xl font-black text-slate-900 dark:text-white">
-                                    Curriculum Structure and Academic Design
+                                    Understanding the Course Types
                                 </h3>
-                                <div className="mt-3 space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-                                    <p>
-                                        The IGNOU BA Economics follows the Choice-Based Credit System. This ensures a balanced mixture of theoretical, analytic, and skills-oriented learning. Over six semesters, students will earn 148 credits, which are divided into five categories. Core Courses; Discipline-Specific electives; Ability Enhancement courses; Skill Enhancement courses, and Generic Electives.
-                                    </p>
-                                    <p>
-                                        Each credit is equal to 30 hours of work, including self learning, assignments, counseling sessions, and project work.
-                                    </p>
-                                    <p>
-                                        The course progresses from the foundational topics of micro-and macroeconomics up to advanced subjects such as econometrics. Quantitative techniques, policy analysis, and development theory.
-                                    </p>
-                                    <p>
-                                        Instead of memorizing, we focus on conceptual clarity, data analysis, and policy implementation, which will help you to understand how economics works in the real world.
-                                    </p>
-                                    <p>
-                                        The program introduces modules on communication, environment, and research skills, which help students connect economics with society and sustainability.
-                                    </p>
+                                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            CC - Core Course
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Essential economics subjects that form the foundation of your degree
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            AECC - Ability Enhancement Compulsory Course
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Communication and environmental awareness courses
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            GE - Generic Elective
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Choose from various disciplines to broaden your knowledge
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            SEC - Skill Enhancement Course
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Practical skills courses for career readiness
+                                        </div>
+                                    </div>
+                                    <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5 sm:col-span-2">
+                                        <div className="font-black text-slate-900 dark:text-white">
+                                            DSE - Discipline Specific Elective
+                                        </div>
+                                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                                            Specialized economics courses allowing you to focus on areas of interest
+                                        </div>
+                                    </div>
                                 </div>
                             </Card>
                         </Reveal>
                     </Section>
 
-                    {/* CAREERS */}
-                    <Section alt>
-                        <div id="careers" />
+                    {/* ELIGIBILITY */}
+                    <Section>
+                        <div id="eligibility" />
                         <SectionHeader
-                            eyebrow="Careers"
-                            title="Career Opportunities After IGNOU BA Economics"
-                            subtitle="Economics is practical: analysis, statistics, forecasting, policy — valuable everywhere."
+                            eyebrow="Eligibility"
+                            title="Who Can Apply for BA in Economics Admission 2026?"
+                            subtitle="IGNOU keeps admission criteria simple and inclusive. The university believes education should be accessible to everyone who wants to learn."
                         />
 
                         <div className="grid gap-6 lg:grid-cols-2">
                             <Reveal>
                                 <Card>
-                                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                        An Economics degree opens more doors than you might think. Graduates can analyze patterns, interpret statistics, and design policies -- skills highly valued by all industries. After you complete the IGNOU BA Economics program, you can choose to pursue careers in several different directions:
-                                    </p>
-
-                                    <div className="mt-4 grid gap-4">
-                                        <MiniCard
-                                            title="1. Banking and Financial Services"
-                                            desc="Join public or private banking as an analyst or officer. Your economics degree will give you a good understanding of interest rates, financial markets, and consumer trends. This knowledge is essential for jobs in investment banking or credit analysis.."
+                                    <h3 className="font-black text-slate-900 dark:text-white">
+                                        Basic Eligibility Requirements
+                                    </h3>
+                                    <div className="mt-4 space-y-4">
+                                        <EligibilityItem
+                                            title="Educational Qualification"
+                                            items={[
+                                                "You need to have passed Class 12 from any recognized board in India",
+                                                "Any stream works—Science, Commerce, or Arts students can all apply",
+                                                "No minimum percentage requirement exists for admission",
+                                                "Even if you scored low marks in Class 12, you're still eligible"
+                                            ]}
                                         />
-                                        <MiniCard
-                                            title="2. Government and Civil Services"
-                                            desc="The government is always looking for economics graduates, particularly in the Indian Economic Services (IES), Civil Services, and Statistics agencies. The analytical skills developed by the program are ideal for exam prep and policy roles."
+                                        <EligibilityItem
+                                            title="Age Limit"
+                                            items={[
+                                                "Absolutely no age restrictions apply",
+                                                "Whether you're 18 or 58, you can enroll",
+                                                "Many students join after years of working"
+                                            ]}
                                         />
-                                        <MiniCard
-                                            title="3. Corporate and Business Analysis"
-                                            desc="Economists are essential to modern businesses for their market research, forecasting skills, and support in making decisions. Graduates are qualified to work as analysts, consultants, or research associates."
+                                        <EligibilityItem
+                                            title="Working Professionals"
+                                            items={[
+                                                "Currently employed individuals are welcome",
+                                                "No need to take career breaks or resign",
+                                                "Study while continuing your job"
+                                            ]}
                                         />
-                                        <MiniCard
-                                            title="4. Policy Research for NGOs"
-                                            desc="If you are interested in development, sustainability, or governance, you can use this degree to conduct policy research for organizations like NITI-Aayog, UNDP, or the World Bank, as well as NGOs that work on social welfare and resource allocation."
-                                        />
-                                        <MiniCard
-                                            title="5. Academia and Higher Studies"
-                                            desc="Students can move on to global programs, such as the MSc in Development Economics. Researchers can go on to work for think tanks, universities, or international agencies."
-                                        />
-                                        <MiniCard
-                                            title="6. Data Analytics and Economic Modeling"
-                                            desc="In today's world of data, economists who are proficient in quantitative methods and econometrics are highly valued for analytics roles. This course will prepare you to work at the intersection of data science and economics."
+                                        <EligibilityItem
+                                            title="Previous Education Gap"
+                                            items={[
+                                                "If you completed Class 12 ten years ago, that's perfectly fine",
+                                                "Education gaps don't disqualify you",
+                                                "Life happens, and IGNOU understands that"
+                                            ]}
                                         />
                                     </div>
                                 </Card>
                             </Reveal>
 
                             <Reveal>
-                                <div className="grid gap-6">
-                                    <ContentCard
-                                        title="Emerging Areas for Study"
-                                        paragraphs={[
-                                            "While the core curriculum is comprehensive, new domains continue to shape how economists think. To stay abreast of global changes, students are encouraged either to specialize or explore topics such as:",
-                                        ]}
-                                        bullets={[
-                                            {
-                                                b: "Digital Economics:",
-                                                t: "Understanding the effects of Fintech, online trading, and digital currencies on employment, growth, and productivity.",
-                                            },
-                                            {
-                                                b: "Behavioral Economics:",
-                                                t: "The study of psychological factors that influence consumer and financial decisions.",
-                                            },
-                                            {
-                                                b: "Big Data & AI Applications:",
-                                                t: "Using Machine Learning for Forecasting, Demand Prediction, and Policy Simulation.",
-                                            },
-                                            {
-                                                b: "Sustainable Development & Climate Economics:",
-                                                t: "Addressing issues of economic policy that are tied to environmental policies.",
-                                            },
-                                            {
-                                                b: "Public Policy & Government:",
-                                                t: "Bridging economics, policymaking, social welfare, and administration.",
-                                            },
-                                        ]}
-                                    />
+                                <Card>
+                                    <h3 className="font-black text-slate-900 dark:text-white">
+                                        Why This Open Eligibility Matters
+                                    </h3>
+                                    <div className="mt-3 space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
+                                        <p>
+                                            This open eligibility philosophy is what makes IGNOU special. Traditional universities often have complicated eligibility rules, minimum percentage requirements, and age restrictions. IGNOU removes these barriers because the university believes in lifelong learning opportunities for all.
+                                        </p>
+                                        <p>
+                                            Whether you're a fresh Class 12 graduate planning your career, a working professional wanting to upgrade qualifications, a homemaker returning to education after years, or someone who couldn't attend regular college earlier—this program welcomes you.
+                                        </p>
+                                    </div>
 
-                                    <ContentCard
-                                        title="How Unnati Supports Students (0–100 Guidance)"
-                                        paragraphs={[
-                                            "IGNOU allows you to study at your own pace, but managing deadlines, portals, and assignments can seem overwhelming. Unnati Education is here to transform your experience:",
-                                        ]}
-                                        bullets={[
-                                            {
-                                                b: "Counseling on a Personalized Basis:",
-                                                t: "We can help you better understand the structure of the courses, the credit system, and the subject combinations that are best suited to your goals.",
-                                            },
-                                            {
-                                                b: "Paperwork handled correctly:",
-                                                t: "We ensure all paperwork is completed correctly on time.",
-                                            },
-                                            {
-                                                b: "Assignment guidance:",
-                                                t: " Get well-structured notes and solved assignments. You can also access previous-year questions, which are aligned to IGNOU's assessment style.",
-                                            },
-                                            {
-                                                b: "Exam preparation:",
-                                                t: "Our mentors offer a targeted preparation for the term-end exams (TEE) that covers both conceptual clarity and a writing strategy.",
-                                            },
-                                            {
-                                                b: "Re-registration + backlog support:",
-                                                t: "Re-registration, Backlog Support, and Never Lose a Semester. We assist with reregistration, backlog support, and revaluation.",
-                                            },
-                                            {
-                                                b: "Monitoring from beginning to end:",
-                                                t: "We monitor your progress, ensuring you don't miss any updates or submissions.",
-                                            },
-                                        ]}
-                                        footer="We help you to enroll, but we also ensure that you get your degree with confidence, on time, and with top results."
-                                    />
-                                </div>
+                                    <div className="mt-6 p-4 rounded-2xl bg-green-50 dark:bg-green-500/10 border border-green-200/70 dark:border-green-500/25">
+                                        <div className="flex items-start gap-3">
+                                            <div className="mt-1">
+                                                <svg className="h-6 w-6 text-green-600 dark:text-green-400" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M12 2.8a9.2 9.2 0 1 0 0 18.4 9.2 9.2 0 0 0 0-18.4Zm4.6 7.1-5.2 5.2a1 1 0 0 1-1.4 0l-2.6-2.6a1 1 0 0 1 1.4-1.4l1.9 1.9 4.5-4.5a1 1 0 0 1 1.4 1.4Z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div className="font-black text-green-900 dark:text-green-100">
+                                                    Ready to Check Your Eligibility?
+                                                </div>
+                                                <p className="mt-1 text-sm text-green-800 dark:text-green-200">
+                                                    Contact us for a quick verification of your documents and eligibility status.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Card>
+                            </Reveal>
+                        </div>
+                    </Section>
+
+                    {/* IMPORTANT DATES */}
+                    <Section alt>
+                        <div id="dates" />
+                        <SectionHeader
+                            eyebrow="Important Dates"
+                            title="Important Dates for BA in Economics Admission 2026"
+                            subtitle="Timing matters in admissions. Missing a deadline can mean waiting six more months for the next cycle."
+                        />
+
+                        <div className="grid gap-6 lg:grid-cols-2">
+                            <Reveal>
+                                <Card>
+                                    <h3 className="font-black text-slate-900 dark:text-white flex items-center gap-3">
+                                        <span className="grid h-10 w-10 place-items-center rounded-xl bg-blue-600 text-white text-sm font-black">
+                                            JAN
+                                        </span>
+                                        January Session 2026
+                                    </h3>
+                                    <div className="mt-4 overflow-x-auto">
+                                        <table className="w-full text-left text-sm">
+                                            <thead>
+                                                <tr className="border-b border-slate-200/80 dark:border-white/10">
+                                                    <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
+                                                        Activity
+                                                    </th>
+                                                    <th className="py-3 font-black text-slate-700 dark:text-slate-200">
+                                                        Expected Timeline
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
+                                                <Row k="Online Application Opens" v="Early January 2026" />
+                                                <Row k="Last Date to Apply" v="March 31, 2026" />
+                                                <Row k="Late Admission (if extended)" v="Mid-April 2026" />
+                                                <Row k="Academic Session Begins" v="January 2026" />
+                                                <Row k="Study Material Dispatch" v="Within 30 days of admission" />
+                                                <Row k="First Assignment Submission" v="As per academic calendar" />
+                                                <Row k="Term-End Examination" v="June 2026" />
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </Card>
+                            </Reveal>
+
+                            <Reveal>
+                                <Card>
+                                    <h3 className="font-black text-slate-900 dark:text-white flex items-center gap-3">
+                                        <span className="grid h-10 w-10 place-items-center rounded-xl bg-indigo-600 text-white text-sm font-black">
+                                            JUL
+                                        </span>
+                                        July Session 2026
+                                    </h3>
+                                    <div className="mt-4 overflow-x-auto">
+                                        <table className="w-full text-left text-sm">
+                                            <thead>
+                                                <tr className="border-b border-slate-200/80 dark:border-white/10">
+                                                    <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
+                                                        Activity
+                                                    </th>
+                                                    <th className="py-3 font-black text-slate-700 dark:text-slate-200">
+                                                        Expected Timeline
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
+                                                <Row k="Online Application Opens" v="Early July 2026" />
+                                                <Row k="Last Date to Apply" v="September 30, 2026" />
+                                                <Row k="Late Admission (if extended)" v="Mid-October 2026" />
+                                                <Row k="Academic Session Begins" v="July 2026" />
+                                                <Row k="Study Material Dispatch" v="Within 30 days of admission" />
+                                                <Row k="First Assignment Submission" v="As per academic calendar" />
+                                                <Row k="Term-End Examination" v="December 2026" />
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </Card>
                             </Reveal>
                         </div>
 
+                        <div className="mt-6" />
+
+                        <Reveal>
+                            <Card>
+                                <h3 className="font-black text-slate-900 dark:text-white">
+                                    Important Points About These Dates
+                                </h3>
+                                <div className="mt-4 space-y-4">
+                                    <div className="flex gap-3">
+                                        <span className="mt-[2px] grid h-6 w-6 flex-shrink-0 place-items-center rounded-lg bg-blue-600 text-white">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                                                <path d="M9.2 16.6 4.9 12.3a1 1 0 0 1 1.4-1.4l2.9 2.9 8.5-8.5a1 1 0 0 1 1.4 1.4l-9.9 9.9Z" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-slate-600 dark:text-slate-300">
+                                            These timelines are tentative based on previous years' patterns. IGNOU announces exact dates on their official website closer to each session. Sometimes the university extends deadlines if there's high demand or technical issues.
+                                        </span>
+                                    </div>
+                                    {/* <div className="flex gap-3">
+                                        <span className="mt-[2px] grid h-6 w-6 flex-shrink-0 place-items-center rounded-lg bg-slate-900 text-white dark:bg-white/90 dark:text-slate-900">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                                                <path d="M12 2.8a9.2 9.2 0 1 0 0 18.4 9.2 9.2 0 0 0 0-18.4Zm1 13.4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm0-3.6a1 1 0 0 1-2 0V8.2a1 1 0 1 1 2 0v4.4Z" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-slate-600 dark:text-slate-300">
+                                            This is where Unnati Education becomes invaluable. We track official notifications daily. The moment IGNOU announces dates, we inform our students immediately. We send reminders as deadlines approach. We ensure you never miss critical dates because you forgot to check the website.
+                                        </span>
+                                    </div> */}
+                                    <div className="flex gap-3">
+                                        <span className="mt-[2px] grid h-6 w-6 flex-shrink-0 place-items-center rounded-lg bg-blue-600 text-white">
+                                            <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                                                <path d="M9.2 16.6 4.9 12.3a1 1 0 0 1 1.4-1.4l2.9 2.9 8.5-8.5a1 1 0 0 1 1.4 1.4l-9.9 9.9Z" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-slate-600 dark:text-slate-300">
+                                            <strong className="text-slate-900 dark:text-white">This is where Unnati Education becomes invaluable.</strong> We track official notifications daily. The moment IGNOU announces dates, we inform our students immediately. We send reminders as deadlines approach. We ensure you never miss critical dates because you forgot to check the website.
+                                        </span>
+                                    </div>
+                                </div>
+                            </Card>
+                        </Reveal>
+                    </Section>
+
+                    {/* HOW UNNATI SUPPORTS */}
+                    <Section>
+                        <div id="support" />
+                        <SectionHeader
+                            eyebrow="Our Support"
+                            title="How Unnati Education Supports Your Success Journey"
+                            subtitle="Our support is not just about filling admission forms. We provide comprehensive guidance throughout your entire program. Here's how we help at every stage:"
+                        />
+
+                        <Reveal>
+                            <div className="grid gap-6">
+                                <SupportPhaseCard
+                                    phase="Before Admission"
+                                    subtitle="Getting Started Right"
+                                    items={[
+                                        {
+                                            title: "Eligibility Verification",
+                                            desc: "Before you invest time and hope, we verify if you're eligible. We check your Class 12 certificates, mark sheets, and other documents. Better to know upfront than face rejection later."
+                                        },
+                                        {
+                                            title: "Program Counseling",
+                                            desc: "We explain the complete course structure in simple language. You understand what subjects you'll study, how credits work, what electives mean, and how the examination system operates. No confusing jargon, just clear explanations."
+                                        },
+                                        {
+                                            title: "Subject Selection Guidance",
+                                            desc: "When choosing electives, we help you make informed decisions. Which subjects align with your career goals? Which combinations work well together? We've guided hundreds of students, so we know what works."
+                                        },
+                                        {
+                                            title: "Application Process",
+                                            desc: "IGNOU's online application has multiple steps. Upload this document here, enter this information there, choose this option, pay through this method. We guide you through every single step. We check your application before submission to catch any errors."
+                                        },
+                                        {
+                                            title: "Document Verification",
+                                            desc: "Uploaded documents must meet specific requirements—size limits, format types, clarity standards. We help you prepare documents correctly. One wrong upload can delay your admission by weeks."
+                                        },
+                                        {
+                                            title: "Payment Guidance",
+                                            desc: "Understanding what amount to pay, which payment mode to use, and how to confirm payment happens correctly. We explain the process and verify that your payment went through successfully."
+                                        }
+                                    ]}
+                                />
+
+                                <SupportPhaseCard
+                                    phase="During Your Studies"
+                                    subtitle="Consistent Support"
+                                    items={[
+                                        {
+                                            title: "Assignment Help",
+                                            desc: "Every semester includes assignment submissions. We don't write your assignments—that would be cheating. Instead, we guide you on structure, formatting, word limits, and referencing. We review your drafts and suggest improvements. We ensure you submit on time."
+                                        },
+                                        {
+                                            title: "Study Material Support",
+                                            desc: "If your study material hasn't arrived or is incomplete, we help you follow up with IGNOU. We also guide you to digital resources when you need them."
+                                        },
+                                        {
+                                            title: "Doubt Clarification",
+                                            desc: "Confused about a concept? Unclear about an instruction? Contact us. We clarify doubts or connect you with subject experts who can help."
+                                        },
+                                        {
+                                            title: "Re-registration Assistance",
+                                            desc: "Every semester, you must re-register for next semester's subjects. The process has specific timelines and procedures. We remind you when re-registration opens, guide you through subject selection, and ensure it completes successfully. Missing re-registration causes semester loss, so we're particularly careful here."
+                                        },
+                                        {
+                                            title: "Exam Form Submission",
+                                            desc: "Before each examination cycle, you must fill and submit exam forms. We remind you about deadlines, help you fill forms correctly, and verify submission."
+                                        }
+                                    ]}
+                                />
+
+                                <SupportPhaseCard
+                                    phase="Examination Support"
+                                    subtitle="Maximizing Your Performance"
+                                    items={[
+                                        {
+                                            title: "Exam Preparation Strategies",
+                                            desc: "We share effective study techniques for IGNOU exams. How to read study materials efficiently, how to make useful notes, how to practice with previous year papers, how to manage time during exams."
+                                        },
+                                        {
+                                            title: "Answer Writing Guidance",
+                                            desc: "IGNOU examinations have specific expectations for answers. We teach you how to structure answers, how much detail to include, how to present information clearly. Good content with poor presentation loses marks. We help you present well."
+                                        },
+                                        {
+                                            title: "Exam Schedule Updates",
+                                            desc: "When IGNOU releases exam dates and center information, we update you immediately. No last-minute surprises."
+                                        },
+                                        {
+                                            title: "Hall Ticket Download",
+                                            desc: "We remind you to download hall tickets and verify all details are correct. If there's an error, we help you get it corrected before the exam."
+                                        }
+                                    ]}
+                                />
+
+                                <SupportPhaseCard
+                                    phase="After Exams"
+                                    subtitle="Closing the Loop"
+                                    items={[
+                                        {
+                                            title: "Result Tracking",
+                                            desc: "When results are about to be declared, we inform you. We guide you on checking results online."
+                                        },
+                                        {
+                                            title: "Rechecking Support",
+                                            desc: "If you feel marks don't reflect your performance, we help you apply for rechecking or re-evaluation. We explain the process, costs, and realistic expectations."
+                                        },
+                                        {
+                                            title: "Backlog Management",
+                                            desc: "If you don't clear a paper, we help you plan how to reappear. Which session to choose, how to prepare better, what changed in the syllabus if anything."
+                                        },
+                                        {
+                                            title: "Final Semester Procedures",
+                                            desc: "When you're completing your last semester, several things need attention—all previous papers cleared, all assignments submitted, all fees paid, convocation registration if you want. We ensure everything is sorted."
+                                        },
+                                        {
+                                            title: "Degree Certificate",
+                                            desc: "Once you complete all requirements, we guide you through the degree application process. We track your application and ensure your certificate reaches you."
+                                        }
+                                    ]}
+                                />
+                            </div>
+                        </Reveal>
+
                         <div className="mt-8" />
-                        <div id="conclusion" />
+
+                        <Reveal>
+                            <Card>
+                                <div className="text-center">
+                                    <h3 className="text-2xl font-black text-slate-900 dark:text-white">
+                                        From Beginning to End, We're Your Constant Support System
+                                    </h3>
+                                    <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                                        You're never alone in this journey. From your first inquiry until you receive your final degree certificate, we stay with you. Your success becomes our goal.
+                                    </p>
+                                    <div className="mt-6 flex flex-wrap justify-center gap-3">
+                                        <CTA
+                                            href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20I%20need%20complete%20support"
+                                            tone="primary"
+                                        >
+                                            <WhatsAppIcon className="h-5 w-5" />
+                                            Get Complete Support
+                                        </CTA>
+                                        <CTA href="tel:+919355198199" tone="ghost">
+                                            <PhoneIcon className="h-5 w-5" />
+                                            Talk to an Advisor
+                                        </CTA>
+                                    </div>
+                                </div>
+                            </Card>
+                        </Reveal>
+                    </Section>
+
+                    {/* ECONOMICS IN REAL LIFE */}
+                    <Section alt>
+                        <div id="real-life" />
+                        <SectionHeader
+                            eyebrow="Real-World Application"
+                            title="Understanding How Economics Shapes Real Life"
+                            subtitle="Economics is not just about complicated graphs and mathematical formulas. At its heart, economics is about understanding human behavior and how societies make choices."
+                        />
+
+                        <Reveal>
+                            <Card>
+                                <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+                                    <p>
+                                        Every day, you make economic decisions. Should you buy that new phone or save the money? Economics explains the trade-offs. Why did your favorite restaurant increase prices? Economic principles of demand and supply. Why does the government give subsidies on some products? Policy economics. Why do some people have more wealth than others? Distribution economics.
+                                    </p>
+                                    <p>
+                                        When you study this program, you start seeing these patterns everywhere. You watch news differently. You understand why governments make certain policy decisions. You comprehend what businesses are trying to achieve with their strategies. You recognize when someone's making a logical economic argument versus an emotional one.
+                                    </p>
+                                    <p>
+                                        This awareness is powerful. It helps you make better personal financial decisions. It makes you a more informed citizen who understands policy debates. It makes you a more valuable employee because you understand business logic. It makes you a better entrepreneur if you start your own venture.
+                                    </p>
+                                    <p className="font-semibold text-slate-900 dark:text-white">
+                                        The knowledge is not locked in textbooks. It flows into every aspect of your life, making you sharper, more analytical, and more effective.
+                                    </p>
+                                </div>
+                            </Card>
+                        </Reveal>
+                    </Section>
+
+                    {/* WHY START NOW */}
+                    <Section>
+                        <div id="why-now" />
+                        <SectionHeader
+                            eyebrow="Take Action"
+                            title="Why Starting Your BA in Economics Admission 2026 Makes Sense Now"
+                            subtitle="If you're thinking about doing this program 'someday,' let me tell you—someday usually never comes. Life keeps happening. Responsibilities keep growing. Years pass quickly."
+                        />
+
+                        <Reveal>
+                            <Card>
+                                <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+                                    <p>
+                                        2026 is here. The admission cycles are starting soon. If not now, when? Three years from now, you'll either have this degree or wish you had started three years ago. The choice is yours, but the time to act is now.
+                                    </p>
+                                    <p>
+                                        Maybe you're worried about balancing work and studies. Thousands of working professionals complete this program successfully every year. Maybe you're concerned about your age. Students from 20 to 60 are currently studying in IGNOU. Maybe you're worried about costs. IGNOU's structure makes it genuinely affordable.
+                                    </p>
+                                    <p>
+                                        Whatever's holding you back, the solution likely exists. And that's exactly what we at Unnati Education help you figure out. Talk to us about your concerns. Let us show you how others in similar situations succeeded. Let us create a plan that works for your specific circumstances.
+                                    </p>
+                                    <p className="text-lg font-black text-slate-900 dark:text-white">
+                                        The longer you wait, the longer you stay in the same position. Growth requires action, and action starts with a decision.
+                                    </p>
+                                </div>
+
+                                <div className="mt-6 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-500/10 dark:to-indigo-500/10 border border-blue-200/70 dark:border-blue-500/25">
+                                    <h4 className="text-xl font-black text-slate-900 dark:text-white">
+                                        Don't Let Another Admission Cycle Pass By
+                                    </h4>
+                                    <p className="mt-2 text-slate-700 dark:text-slate-200">
+                                        The January 2026 session is approaching. The July 2026 session will follow. Secure your seat in one of these cycles and start building the future you want.
+                                    </p>
+                                    <div className="mt-4 flex flex-wrap gap-3">
+                                        <CTA
+                                            href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20Ready%20to%20start%20BA%20Economics%202026"
+                                            tone="primary"
+                                        >
+                                            <WhatsAppIcon className="h-5 w-5" />
+                                            Start Your Journey Now
+                                        </CTA>
+                                        <CTA href="tel:+919355198199" tone="ghost">
+                                            <PhoneIcon className="h-5 w-5" />
+                                            Speak with a Counselor
+                                        </CTA>
+                                    </div>
+                                </div>
+                            </Card>
+                        </Reveal>
+                    </Section>
+
+                    {/* NEXT STEPS */}
+                    <Section alt>
+                        <div id="next-steps" />
+                        <SectionHeader
+                            eyebrow="Getting Started"
+                            title="Take Your First Step Toward BA in Economics Admission 2026 Today"
+                            subtitle="You've read this far, which means something about this program interests you. That interest is worth exploring further."
+                        />
 
                         <Reveal>
                             <Card>
                                 <h3 className="text-2xl font-black text-slate-900 dark:text-white">
-                                    Conclusion
+                                    Here's What Happens Next When You Contact Unnati Education
                                 </h3>
-                                <div className="mt-3 space-y-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-                                    <p>
-                                        The IGNOU BA in Economics 2026 Admission program is much more than a bachelor's degree. It opens the door to analytical thinking, financial knowledge, and policy understanding. The flexible learning structure and NEP-aligned syllabus, as well as the strong industry relevance of this program, empower students to achieve both academic and professional excellence, without having to step away from their commitments.
+
+                                <div className="mt-6 grid gap-4">
+                                    <ProcessStep
+                                        number="01"
+                                        title="You Reach Out"
+                                        description="Contact us through phone, WhatsApp, email, or our website. Tell us about yourself—your educational background, current situation, what you hope to achieve."
+                                    />
+                                    <ProcessStep
+                                        number="02"
+                                        title="We Have a Detailed Conversation"
+                                        description="We answer all your questions honestly. We explain the program, the process, the timeline, everything. No pressure, just information."
+                                    />
+                                    <ProcessStep
+                                        number="03"
+                                        title="Start the Admission Process"
+                                        description="If you decide this program is right for you, we start the admission process. We guide you through documentation, form filling, and submission. We handle the confusing parts."
+                                    />
+                                    <ProcessStep
+                                        number="04"
+                                        title="Begin Your Learning Journey"
+                                        description="Once admitted, you receive study materials and join the student community. Your learning journey begins, and we're with you for every milestone."
+                                    />
+                                    <ProcessStep
+                                        number="05"
+                                        title="Ongoing Support Throughout"
+                                        description="Semester by semester, assignment by assignment, exam by exam, we support you. You focus on learning and growing. We handle the administrative complexities."
+                                    />
+                                    <ProcessStep
+                                        number="06"
+                                        title="Graduate with Your Degree"
+                                        description="Three to six years later, depending on your pace, you graduate with your BA Economics degree. Your career options expand. Your knowledge deepens. Your confidence grows."
+                                    />
+                                </div>
+
+                                <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-500/10 dark:to-emerald-500/10 border border-green-200/70 dark:border-green-500/25">
+                                    <h4 className="text-xl font-black text-slate-900 dark:text-white">
+                                        This Entire Journey Starts with One Simple Action
+                                    </h4>
+                                    <p className="mt-2 text-slate-700 dark:text-slate-200 leading-relaxed">
+                                        Don't let another BA in Economics admission cycle pass by while you're still thinking about it. BA in Economics graduates are in demand. The skills you'll develop are valuable. The degree is recognized. The flexibility is real. The support from Unnati Education is comprehensive.
                                     </p>
-                                    <p>
-                                        This course is the perfect foundation for anyone who wants to pursue a career as an economist, researcher, policy maker, or financier. With Unnati Education's 0-to-1 support, you can create a clear, structured path that is free of stress.
+                                    <p className="mt-3 text-lg font-black text-slate-900 dark:text-white">
+                                        Everything you need for success is available. All that's missing is your decision to begin.
                                     </p>
-                                    <p>
-                                        Let us take care of the complexities so you can concentrate on your growth.
-                                        Unnati Education offers guidance and guaranteed progress for the IGNOU BA Economics 2026 journey.
-                                    </p>
-                                    {/* <p className="font-semibold text-slate-900 dark:text-white">
-                                        Note: Your Blade conclusion line says
-                                        “IGNOU BA Economics 2026 journey.”
-                                        Update that to 2026.
-                                    </p> */}
                                 </div>
                             </Card>
                         </Reveal>
@@ -699,36 +923,68 @@ export default function BaEconomicsAdmission2025() {
                     <Section>
                         <div id="contact" />
                         <SectionHeader
-                            eyebrow="Contact"
-                            title="Get Started — Contact Unnati"
-                            subtitle="Send details and we’ll guide you end-to-end."
+                            eyebrow="Contact Us"
+                            title="Ready to Get Started? Contact Unnati Education Today"
+                            subtitle="Send us your details and we'll guide you through every step of your admission journey."
                         />
 
                         <Reveal>
-                            <div className="rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-6 shadow-sm dark:border-white/10 dark:bg-[#0b1220]/70">
-                                <p className="text-slate-600 dark:text-slate-300">
-                                    Send your details — <b>name</b>, <b>DOB</b>,{" "}
-                                    <b>qualification</b>, and{" "}
-                                    <b>chosen program</b>. We’ll handle
-                                    admission, documents, assignments, and
-                                    exams.
-                                </p>
-                                <div className="mt-5 flex flex-wrap gap-3">
-                                    <CTA
-                                        href="https://wa.me/919355198199"
-                                        tone="primary"
-                                    >
-                                        <WhatsAppIcon className="h-5 w-5" />
-                                        Message
-                                    </CTA>
-                                    <CTA href="tel:+919355198199" tone="ghost">
-                                        <PhoneIcon className="h-5 w-5" />
-                                        Call
-                                    </CTA>
+                            <div className="rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-8 shadow-lg dark:border-white/10 dark:bg-[#0b1220]/70">
+                                <div className="text-center max-w-2xl mx-auto">
+                                    <h3 className="text-2xl font-black text-slate-900 dark:text-white">
+                                        Let's Start Your Success Story
+                                    </h3>
+                                    <p className="mt-3 text-slate-600 dark:text-slate-300">
+                                        Send us your details — <b>name</b>, <b>date of birth</b>, <b>qualification</b>, and <b>chosen program</b>. We'll handle admission, documents, assignments, and exams. Our team is ready to support you every step of the way.
+                                    </p>
+
+                                    <div className="mt-8 flex flex-wrap justify-center gap-4">
+                                        <CTA
+                                            href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20I%20want%20to%20apply%20for%20BA%20Economics%202026"
+                                            tone="primary"
+                                        >
+                                            <WhatsAppIcon className="h-5 w-5" />
+                                            Message on WhatsApp
+                                        </CTA>
+                                        <CTA href="tel:+919355198199" tone="ghost">
+                                            <PhoneIcon className="h-5 w-5" />
+                                            Call Now
+                                        </CTA>
+                                    </div>
+
+                                    <div className="mt-8 grid gap-4 sm:grid-cols-2 text-left">
+                                        <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                            <div className="flex items-center gap-3">
+                                                <PhoneIcon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                                                <div>
+                                                    <div className="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">
+                                                        Call/WhatsApp
+                                                    </div>
+                                                    <div className="font-black text-slate-900 dark:text-white">
+                                                        9355198199
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+                                            <div className="flex items-center gap-3">
+                                                <ClockIcon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                                                <div>
+                                                    <div className="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">
+                                                        Available
+                                                    </div>
+                                                    <div className="font-black text-slate-900 dark:text-white">
+                                                        Mon - Sat, 9 AM - 7 PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p className="mt-6 text-sm text-slate-500 dark:text-slate-400">
+                                        <strong>Quick Tip:</strong> Send <b>"BA Economics 2026"</b> on WhatsApp for faster response and immediate assistance.
+                                    </p>
                                 </div>
-                                <p className="mt-3 text-sm font-black text-slate-700 dark:text-slate-200">
-                                    Call/WhatsApp: 9355198199 
-                                </p>
                             </div>
                         </Reveal>
 
@@ -773,75 +1029,60 @@ function Hero() {
 
                     {/* Title */}
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
-                        IGNOU BA Economics
-                        <span className="block text-blue-700 dark:text-blue-300">
+                        IGNOU BA in Economics
+                        <span className="block text-blue-700 dark:text-blue-300 mt-1">
                             Admission 2026
                         </span>
                     </h1>
 
-                    <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                    <p className="mt-4 text-sm sm:text-base text-slate-600 dark:text-slate-300">
                         Programme Code:{" "}
                         <span className="font-black text-slate-900 dark:text-white">
                             BAFEC
-                        </span>
+                        </span>{" "}
+                        | Your Complete Guide to Getting Started
                     </p>
 
-                    <div className="mt-4 space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <div className="mt-5 space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
                         <p>
-                            IGNOU BA in Economics Admissions 2026 is India’s
-                            most sought-after undergraduate option for students
-                            interested in economics, finance, and data analysis.
-                            The School of Social Sciences, Indira Gandhi Open
-                            University (IGNOU), offers this course that combines
-                            academic excellence and real-world applications
-                            through the Choice-Based Credit System.
+                            Looking to study economics but need flexibility? IGNOU's BA in Economics might be exactly what you need. This three-year program lets you study at your own pace while earning a UGC-recognized degree that opens doors across government jobs, private sector roles, and higher studies.
                         </p>
                         <p>
-                            The program's core objective is to teach learners
-                            how the economy works, how policy shapes growth, and
-                            what data are used for modern decision making. It is
-                            the perfect program for students looking to gain a
-                            combination of quantitative and theoretical skills,
-                            which will open doors to careers in both the public
-                            and private sectors.
+                            Whether you're a working professional or a fresh Class 12 graduate, this program adapts to your schedule without compromising on quality.
                         </p>
                     </div>
 
                     {/* Badges */}
-                    <div className="mt-5 flex flex-wrap gap-2">
-                        <span className="inline-flex items-center gap-2 rounded-full border border-blue-200/70 bg-blue-50 px-3 py-1 text-xs font-black text-blue-800 dark:border-blue-500/25 dark:bg-blue-500/10 dark:text-blue-200">
-                            <CalendarIcon className="h-4 w-4" /> Last Date: 31
-                            Aug 2026
+                    <div className="mt-6 flex flex-wrap gap-2">
+                        <span className="inline-flex items-center gap-2 rounded-full border border-blue-200/70 bg-blue-50 px-3 py-1.5 text-xs font-black text-blue-800 dark:border-blue-500/25 dark:bg-blue-500/10 dark:text-blue-200">
+                            <CalendarIcon className="h-4 w-4" /> Last Date: September 30, 2026
                         </span>
-                        <span className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white px-3 py-1 text-xs font-black text-slate-700 dark:border-slate-800/60 dark:bg-white/5 dark:text-slate-200">
-                            <ClockIcon className="h-4 w-4" /> Duration: 3–6
-                            Years
+                        <span className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white px-3 py-1.5 text-xs font-black text-slate-700 dark:border-slate-800/60 dark:bg-white/5 dark:text-slate-200">
+                            <ClockIcon className="h-4 w-4" /> Duration: 3–6 Years
                         </span>
-                        <span className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white px-3 py-1 text-xs font-black text-slate-700 dark:border-slate-800/60 dark:bg-white/5 dark:text-slate-200">
-                            <BadgeIcon className="h-4 w-4" /> UGC Approved •
-                            CBCS
+                        <span className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white px-3 py-1.5 text-xs font-black text-slate-700 dark:border-slate-800/60 dark:bg-white/5 dark:text-slate-200">
+                            <BadgeIcon className="h-4 w-4" /> 148 Credits
                         </span>
                     </div>
 
                     {/* CTAs */}
-                    <div className="mt-6 flex flex-wrap gap-3">
+                    <div className="mt-7 flex flex-wrap gap-3">
                         <CTA
-                            href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20Economics"
+                            href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20Economics%202026"
                             tone="primary"
                         >
                             <WhatsAppIcon className="h-5 w-5" />
-                            WhatsApp
+                            WhatsApp Us
                         </CTA>
 
                         <CTA href="tel:+919355198199" tone="ghost">
                             <PhoneIcon className="h-5 w-5" />
-                            Call
+                            Call Now
                         </CTA>
                     </div>
 
-                    <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
-                        Tip: Send <b>“BA Economics 2026”</b> on WhatsApp for
-                        faster response.
+                    <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
+                        💡 <b>Quick Tip:</b> Send "BA Economics 2026" on WhatsApp for instant response
                     </p>
                 </div>
             </div>
@@ -891,7 +1132,7 @@ function Section({ children, alt = false }) {
             className={[
                 "mt-12",
                 alt
-                    ? "rounded-[32px] border border-slate-200/80 bg-white/80 backdrop-blur-sm p-6 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.35)] dark:border-white/10 dark:bg-[#0b1220]/70 dark:shadow-[0_25px_70px_-50px_rgba(0,0,0,0.85)]"
+                    ? "rounded-[32px] border border-slate-200/80 bg-white/80 backdrop-blur-sm p-6 sm:p-8 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.35)] dark:border-white/10 dark:bg-[#0b1220]/70 dark:shadow-[0_25px_70px_-50px_rgba(0,0,0,0.85)]"
                     : "",
             ].join(" ")}
         >
@@ -902,19 +1143,21 @@ function Section({ children, alt = false }) {
 
 function SectionHeader({ eyebrow, title, subtitle, rightCTA }) {
     return (
-        <div className="mb-6 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+        <div className="mb-8 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
                 <p className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">
                     {eyebrow}
                 </p>
-                <h2 className="mt-2 text-2xl font-black text-slate-900 dark:text-white">
+                <h2 className="mt-2 text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
                     {title}
                 </h2>
-                <p className="mt-1 text-slate-600 dark:text-slate-300">
-                    {subtitle}
-                </p>
+                {subtitle && (
+                    <p className="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
+                        {subtitle}
+                    </p>
+                )}
             </div>
-            {rightCTA && <div>{rightCTA}</div>}
+            {rightCTA && <div className="lg:flex-shrink-0">{rightCTA}</div>}
         </div>
     );
 }
@@ -958,7 +1201,7 @@ function RevealGrid({ children, cols = "lg:grid-cols-4" }) {
 
 function InfoTile({ label, value, icon }) {
     return (
-        <div className="rounded-2xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-4 shadow-sm dark:border-white/10 dark:bg-[#0b1220]/70">
+        <div className="rounded-2xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-md dark:border-white/10 dark:bg-[#0b1220]/70">
             <div className="flex items-center gap-3">
                 <IconBox>{icon}</IconBox>
                 <div>
@@ -996,14 +1239,14 @@ function Row({ k, v }) {
 function ContentCard({ title, paragraphs = [], bullets = [], footer }) {
     return (
         <Card>
-            <h3 className="font-black text-slate-900 dark:text-white">
+            <h3 className="text-xl font-black text-slate-900 dark:text-white">
                 {title}
             </h3>
             {paragraphs.map((p, i) => (
                 <p
                     key={i}
                     className={`text-slate-600 dark:text-slate-300 leading-relaxed ${
-                        i === 0 ? "mt-2" : "mt-3"
+                        i === 0 ? "mt-3" : "mt-3"
                     }`}
                 >
                     {p}
@@ -1025,14 +1268,23 @@ function ContentCard({ title, paragraphs = [], bullets = [], footer }) {
     );
 }
 
-function MiniCard({ title, desc }) {
+function CareerPathCard({ title, description }) {
     return (
-        <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
-            <div className="font-black text-slate-900 dark:text-white">
-                {title}
-            </div>
-            <div className="mt-1 text-slate-600 dark:text-slate-300">
-                {desc}
+        <div className="rounded-2xl border border-slate-200/80 bg-gradient-to-br from-slate-50 to-white px-5 py-5 transition-all hover:shadow-md dark:border-white/10 dark:from-white/5 dark:to-transparent">
+            <div className="flex items-start gap-3">
+                <div className="mt-1 grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg bg-blue-600 text-white">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                        <path d="M9.2 16.6 4.9 12.3a1 1 0 0 1 1.4-1.4l2.9 2.9 8.5-8.5a1 1 0 0 1 1.4 1.4l-9.9 9.9Z" />
+                    </svg>
+                </div>
+                <div className="flex-1">
+                    <div className="font-black text-slate-900 dark:text-white">
+                        {title}
+                    </div>
+                    <div className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        {description}
+                    </div>
+                </div>
             </div>
         </div>
     );
@@ -1041,7 +1293,7 @@ function MiniCard({ title, desc }) {
 function CheckItem({ text, bold }) {
     return (
         <li className="flex gap-3">
-            <span className="mt-[2px] grid h-6 w-6 place-items-center rounded-lg bg-slate-900 text-white dark:bg-white/90 dark:text-slate-900">
+            <span className="mt-[2px] grid h-6 w-6 flex-shrink-0 place-items-center rounded-lg bg-slate-900 text-white dark:bg-white/90 dark:text-slate-900">
                 <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -1060,17 +1312,69 @@ function CheckItem({ text, bold }) {
     );
 }
 
-function StepMini({ n, title, desc }) {
+function EligibilityItem({ title, items }) {
     return (
         <div className="rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
-            <div className="flex items-start gap-3">
-                <div className="text-2xl font-black text-blue-500/40">{n}</div>
+            <div className="font-black text-slate-900 dark:text-white mb-2">
+                {title}
+            </div>
+            <ul className="space-y-2">
+                {items.map((item, i) => (
+                    <li key={i} className="flex gap-2 text-sm text-slate-600 dark:text-slate-300">
+                        <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                        <span>{item}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+function SupportPhaseCard({ phase, subtitle, items }) {
+    return (
+        <Card>
+            <div className="flex items-center gap-3 mb-4">
+                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 grid place-items-center text-white font-black text-lg">
+                    {phase === "Before Admission" ? "1" : phase === "During Your Studies" ? "2" : phase === "Examination Support" ? "3" : "4"}
+                </div>
                 <div>
+                    <h3 className="text-xl font-black text-slate-900 dark:text-white">
+                        {phase}
+                    </h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-300">
+                        {subtitle}
+                    </p>
+                </div>
+            </div>
+            <div className="grid gap-3">
+                {items.map((item, i) => (
+                    <div key={i} className="rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 dark:border-white/10 dark:bg-white/5">
+                        <div className="font-black text-slate-900 dark:text-white text-sm">
+                            {item.title}
+                        </div>
+                        <div className="mt-1 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            {item.desc}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </Card>
+    );
+}
+
+function ProcessStep({ number, title, description }) {
+    return (
+        <div className="rounded-2xl border border-slate-200/80 bg-gradient-to-br from-slate-50 to-white px-5 py-5 dark:border-white/10 dark:from-white/5 dark:to-transparent">
+            <div className="flex items-start gap-4">
+                <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white font-black text-lg">
+                    {number}
+                </div>
+                <div className="flex-1">
                     <div className="font-black text-slate-900 dark:text-white">
                         {title}
                     </div>
-                    <div className="mt-1 text-slate-600 dark:text-slate-300">
-                        {desc}
+                    <div className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        {description}
                     </div>
                 </div>
             </div>
@@ -1078,51 +1382,150 @@ function StepMini({ n, title, desc }) {
     );
 }
 
-function SyllabusTable({ title, rows }) {
-    return (
-        <div className="rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm p-6 shadow-sm dark:border-white/10 dark:bg-[#0b1220]/70">
-            <h3 className="font-black text-slate-900 dark:text-white">
-                {title}
-            </h3>
+/* ---------------- ACCORDION SYLLABUS ---------------- */
 
-            <div className="mt-4 overflow-x-auto">
-                <table className="w-full text-left text-sm">
-                    <thead>
-                        <tr className="border-b border-slate-200/80 dark:border-white/10">
-                            <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
-                                TYPE
-                            </th>
-                            <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
-                                SUBJECTS
-                            </th>
-                            <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
-                                CODE
-                            </th>
-                            <th className="py-3 font-black text-slate-700 dark:text-slate-200">
-                                CREDITS
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
-                        {rows.map((r, i) => (
-                            <tr key={i}>
-                                <td className="py-3 pr-4 font-semibold text-slate-900 dark:text-white whitespace-nowrap">
-                                    {r[0]}
-                                </td>
-                                <td className="py-3 pr-4 text-slate-600 dark:text-slate-300 min-w-[320px]">
-                                    {r[1]}
-                                </td>
-                                <td className="py-3 pr-4 text-slate-600 dark:text-slate-300 whitespace-nowrap">
-                                    {r[2]}
-                                </td>
-                                <td className="py-3 font-black text-slate-900 dark:text-white whitespace-nowrap">
-                                    {r[3]}
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+function SyllabusAccordion() {
+    const [openSemester, setOpenSemester] = useState(null);
+
+    const semesters = [
+        {
+            id: 1,
+            title: "Semester 1",
+            rows: [
+                ["CC", "Introductory Microeconomics", "BECC-101", "6"],
+                ["CC", "Mathematical Methods for Economics I", "BECC-102", "6"],
+                ["AECC", "Environmental Studies", "BEVAE-181", "4"],
+                ["GE", "(Any 1) Indian Society: Images and Realities / General Psychology / Media and Communication Skills / Disaster Management / Applied Ethics / Understanding Ambedkar / भारतीय सौंदर्यम शास्त्र / National Cadet Corps", "BSOG-171 / BPCG-171 / BEGG-171 / BPAG-171 / BPYG-171 / BABG-171 / BSKG-171 / ONR-003", "6"],
+            ]
+        },
+        {
+            id: 2,
+            title: "Semester 2",
+            rows: [
+                ["CC", "Introductory Macroeconomics", "BECC-103", "6"],
+                ["CC", "Mathematical Methods for Economics II", "BECC-104", "6"],
+                ["AECC", "(Any 1) English Communication Skills / हिंदी भाषा और संप्रेषण", "BEGAE-182 / BHDAE-182", "4"],
+                ["GE", "(Any 1) भारतीय दर्शन के मूल सिद्धांत / Governance: Issues and Challenges / Psychology and Media / Language and Linguistics / Gender Sensitization: Society and Culture / Philosophy of Religion", "BSKG-172 / BPAG-172 / BPCG-172 / BEGG-172 / BGDG-172 / BPYG-172", "6"],
+            ]
+        },
+        {
+            id: 3,
+            title: "Semester 3",
+            rows: [
+                ["CC", "Intermediate Microeconomics I", "BECC-105", "6"],
+                ["CC", "Intermediate Macroeconomics I", "BECC-106", "6"],
+                ["CC", "Statistical Methods for Economics", "BECC-107", "6"],
+                ["SEC", "(Any 1) Tourism Anthropology / Emotional Intelligence / Developing Emotional Competence / समाचार लेखन / Writing and Study Skills / English Language Teaching / Managing Human Resources / Life Skills / Computer Application in Business", "BANS-183 / BPCS-183 / BPCS-185 / BHDS-183 / BEGS-183 / BEGS-185 / BPCS-187 / BSSS-183 / BCOS-183", "4"],
+                ["GE", "(Any 1) E-Governance / Psychology for Health and Well-being / Rethinking Development / Hindi Patrakarita / Academic Writing & Composition / आधार संस्कृत", "BPAG-173 / BPCG-173 / BSOG-173 / BHDG-173 / BEGG-173 / BSKG-173", "6"],
+            ]
+        },
+        {
+            id: 4,
+            title: "Semester 4",
+            rows: [
+                ["CC", "Intermediate Microeconomics II", "BECC-108", "6"],
+                ["CC", "Intermediate Macroeconomics II", "BECC-109", "6"],
+                ["CC", "Introductory Econometrics", "BECC-110", "6"],
+                ["SEC", "(Any 1) Logistics Management / Public Health and Epidemiology / Data Analysis / Managing Stress / School Psychology / Application of Social Psychology / Managing Human Resources / Business Communication / Creative Writing / Society through the Visual / Techniques of Ethnographic Filmmaking", "BPAS-184 / BANS-184 / BECS-184 / BPCS-186 / BPCS-184 / BPCS-188 / BPCS-187 / BEGS-186 / BEGG-174 / BSOS-185 / BSOS-184", "4"],
+                ["GE", "(Any 1) E-Governance / Psychology and Media / Psychology of Gender / Sustainable Development / Creative Writing", "BPAG-174 / BPCG-174 / BPCG-176 / BPAG-174 / BEGG-174", "6"],
+            ]
+        },
+        {
+            id: 5,
+            title: "Semester 5",
+            rows: [
+                ["CC", "Indian Economy – I", "BECC-111", "6"],
+                ["CC", "Development Economics", "BECC-112", "6"],
+                ["DSE-1", "(Any 1) Environmental Economics / Money and Banking", "BECE-141 / BECE-143", "6"],
+                ["DSE-2", "(Any 1) Environmental Economics / Money and Banking", "BECE-141 / BECE-143", "6"],
+            ]
+        },
+        {
+            id: 6,
+            title: "Semester 6",
+            rows: [
+                ["CC", "Indian Economy – II", "BECC-113", "6"],
+                ["CC", "Applied Econometrics", "BECC-114", "6"],
+                ["DSE-3", "(Any 1) Public Finance / International Economics", "BECE-142 / BECE-144", "6"],
+                ["DSE-4", "(Any 1) Public Finance / International Economics", "BECE-142 / BECE-144", "6"],
+            ]
+        }
+    ];
+
+    return (
+        <div className="space-y-3">
+            {semesters.map((semester) => (
+                <div
+                    key={semester.id}
+                    className="rounded-2xl border border-slate-200/80 bg-white/90 backdrop-blur-sm overflow-hidden dark:border-white/10 dark:bg-[#0b1220]/70"
+                >
+                    <button
+                        onClick={() => setOpenSemester(openSemester === semester.id ? null : semester.id)}
+                        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="grid h-10 w-10 place-items-center rounded-xl bg-blue-600 text-white font-black">
+                                {semester.id}
+                            </div>
+                            <h3 className="text-lg font-black text-slate-900 dark:text-white">
+                                {semester.title}
+                            </h3>
+                        </div>
+                        <svg
+                            className={`h-5 w-5 text-slate-400 transition-transform ${
+                                openSemester === semester.id ? "rotate-180" : ""
+                            }`}
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path d="M7.4 8.6a1 1 0 0 1 1.4 0L12 11.8l3.2-3.2a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z" />
+                        </svg>
+                    </button>
+
+                    {openSemester === semester.id && (
+                        <div className="px-6 pb-5 border-t border-slate-200/80 dark:border-white/10">
+                            <div className="overflow-x-auto mt-4">
+                                <table className="w-full text-left text-sm">
+                                    <thead>
+                                        <tr className="border-b border-slate-200/80 dark:border-white/10">
+                                            <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
+                                                TYPE
+                                            </th>
+                                            <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
+                                                SUBJECTS
+                                            </th>
+                                            <th className="py-3 pr-4 font-black text-slate-700 dark:text-slate-200">
+                                                CODE
+                                            </th>
+                                            <th className="py-3 font-black text-slate-700 dark:text-slate-200">
+                                                CREDITS
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-200/60 dark:divide-white/10">
+                                        {semester.rows.map((r, i) => (
+                                            <tr key={i}>
+                                                <td className="py-3 pr-4 font-semibold text-slate-900 dark:text-white whitespace-nowrap">
+                                                    {r[0]}
+                                                </td>
+                                                <td className="py-3 pr-4 text-slate-600 dark:text-slate-300 min-w-[320px]">
+                                                    {r[1]}
+                                                </td>
+                                                <td className="py-3 pr-4 text-slate-600 dark:text-slate-300 whitespace-nowrap">
+                                                    {r[2]}
+                                                </td>
+                                                <td className="py-3 font-black text-slate-900 dark:text-white whitespace-nowrap">
+                                                    {r[3]}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            ))}
         </div>
     );
 }
@@ -1140,7 +1543,7 @@ function CTA({ href, children, tone = "primary" }) {
             rel={isTel || isHash ? undefined : "noreferrer"}
             className={`inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 font-black transition ${
                 tone === "primary"
-                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                    ? "bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-600/25"
                     : "border border-slate-300 dark:border-white/20 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-white/5"
             }`}
         >
@@ -1167,21 +1570,27 @@ function IconBox({ children, tone = "dark" }) {
 
 function MobileStickyCTA() {
     return (
-        <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-t border-slate-200 dark:bg-[#070A12]/90 dark:border-white/10">
+        <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-lg border-t border-slate-200 dark:bg-[#070A12]/95 dark:border-white/10 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.3)]">
             <div className="flex gap-3 p-4">
                 <a
-                    href="https://wa.me/919355198199"
-                    className="flex-1 bg-blue-600 text-white rounded-xl py-3 text-center font-black"
+                    href="https://wa.me/919355198199?text=Hi%20Unnati%20-%20IGNOU%20BA%20Economics%202026"
+                    className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl py-3.5 text-center font-black shadow-lg"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    WhatsApp
+                    <div className="flex items-center justify-center gap-2">
+                        <WhatsAppIcon className="h-5 w-5" />
+                        WhatsApp
+                    </div>
                 </a>
                 <a
                     href="tel:+919355198199"
-                    className="flex-1 border rounded-xl py-3 text-center font-black dark:border-white/20"
+                    className="flex-1 border-2 border-slate-300 dark:border-white/20 rounded-xl py-3.5 text-center font-black"
                 >
-                    Call
+                    <div className="flex items-center justify-center gap-2">
+                        <PhoneIcon className="h-5 w-5" />
+                        Call
+                    </div>
                 </a>
             </div>
         </div>
