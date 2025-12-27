@@ -70,7 +70,7 @@ function Home({ levels = [], qpLevels = [] }) {
                     {/* RIGHT CARD */}
                     <div className="glass rounded-3xl p-10 shadow-2xl
                                     text-slate-900 dark:text-white">
-                        <h2 className="text-2xl font-bold text-center">
+                        <h2 className="text-3xl font-bold text-center">
                             UNNATI EDUCATIONS
                         </h2>
 

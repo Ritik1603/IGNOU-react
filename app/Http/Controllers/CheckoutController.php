@@ -76,10 +76,22 @@ class CheckoutController extends Controller
         foreach ($cartItems as $item) {
             $lineTotal = $item->price * $item->quantity;
 
-            $message .= "• {$item->product->subject_code} (" .
-                ucfirst(str_replace('-', ' ', $item->product->material_type)) .
-                ")\n";
+            $options = $item->options ?? [];
+
+            $material = isset($options['material_type'])
+                ? ucfirst(str_replace('-', ' ', $options['material_type']))
+                : ucfirst(str_replace('-', ' ', $item->product->material_type));
+
+            $session  = $options['session'] ?? $item->product->session;
+            $medium   = $options['medium'] ?? 'N/A';
+            $format   = $options['format'] ?? 'N/A';
+
+            $message .= "• {$item->product->subject_code} ({$material})\n";
+            $message .= "  Session: {$session}\n";
+            $message .= "  Medium: {$medium}\n";
+            $message .= "  Format: {$format}\n";
             $message .= "  Qty: {$item->quantity} × ₹{$item->price} = ₹{$lineTotal}\n\n";
+
         }
 
         $message .= "────────────────\n";

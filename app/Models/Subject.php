@@ -6,11 +6,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-    protected $fillable = ['level_id','code','name','description'];
+    protected $fillable = [
+        'level_id',
+        'code',
+        'name',
+        'description',
+        'meta_title',
+        'meta_description',
+        'canonical_url'];
 
     public function level()
     {
         return $this->belongsTo(Level::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'subject_code', 'code');
     }
 
     protected static function booted()

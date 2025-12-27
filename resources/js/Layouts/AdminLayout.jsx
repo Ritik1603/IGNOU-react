@@ -28,26 +28,9 @@ export default function AdminLayout({ children }) {
                                 Question Papers
                             </p>
 
-                            <Link
-                                href="/admin/question-papers/levels"
-                                className="block hover:text-blue-400"
-                            >
-                                Levels (UG / PG / FYUP)
-                            </Link>
 
-                            <Link
-                                href="/admin/question-papers/subjects"
-                                className="block hover:text-blue-400"
-                            >
-                                Subjects
-                            </Link>
 
-                            <Link
-                                href="/admin/question-papers/sessions"
-                                className="block hover:text-blue-400"
-                            >
-                                Sessions
-                            </Link>
+
 
                             <Link
                                 href="/admin/question-papers/"
@@ -70,8 +53,33 @@ export default function AdminLayout({ children }) {
                                 Store
                             </p>
 
+                            <Link
+                                href="/admin/question-papers/levels"
+                                className="block hover:text-blue-400"
+                            >
+                                Levels (UG / PG / FYUP)
+                            </Link>
+
+                            <Link
+                                href="/admin/question-papers/subjects"
+                                className="block hover:text-blue-400"
+                            >
+                                Subjects
+                            </Link>
+
+                            <Link
+                                href="/admin/question-papers/sessions"
+                                className="block hover:text-blue-400"
+                            >
+                                Sessions
+                            </Link>
+
                             <Link href="/admin/products" className="block hover:text-blue-400">
                                 Products
+                            </Link>
+
+                            <Link href="/admin/import" className="block hover:text-blue-400">
+                                Import Excel
                             </Link>
 
                             <Link href="/admin/coupons" className="block hover:text-blue-400">

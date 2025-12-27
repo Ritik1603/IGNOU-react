@@ -36,25 +36,25 @@ class SubjectController extends Controller
 
         $subject = Subject::create($request->only('level_id','code','name','description'));
 
-        foreach ([
-            'solved-assignments',
-            'guess-papers',
-            'previous-year-papers'
-        ] as $type) {
+        // foreach ([
+        //     'solved-assignments',
+        //     'guess-papers',
+        //     'previous-year-papers'
+        // ] as $type) {
 
-            Product::create([
-                'title' => "{$subject->code} {$type}",
-                'slug' => Str::slug($subject->code.'-'.$type),
-                'subject_code' => $subject->code,
-                'subject_name' => $subject->name,
-                'level' => $subject->level->name,
-                'program' => 'IGNOU',
-                'material_type' => $type,
-                'session' => 'June 2025',
-                'price' => 0,
-                'status' => 0
-            ]);
-        }
+        //     Product::create([
+        //         'title' => "{$subject->code} {$type}",
+        //         'slug' => Str::slug($subject->code.'-'.$type),
+        //         'subject_code' => $subject->code,
+        //         'subject_name' => $subject->name,
+        //         'level' => $subject->level->name,
+        //         'program' => 'IGNOU',
+        //         'material_type' => $type,
+        //         'session' => 'June 2025',
+        //         'price' => 0,
+        //         'status' => 0
+        //     ]);
+        // }
 
         return redirect('/admin/subjects');
     }

@@ -35,15 +35,25 @@ class CartController extends Controller
             ->first();
 
         if ($cart) {
-            $cart->increment('quantity', $qty);
+            $cart->update([
+                'quantity' => $cart->quantity + $qty,
+                'options' => $request->input('selected_options'),
+                'whatsapp_meta' => $request->input('whatsapp_meta'),
+            ]);
+
         } else {
             Cart::create([
-                'user_id'    => auth()->id(),
-                'session_id' => session()->getId(),
-                'product_id' => $product->id,
-                'price'      => $product->finalPrice(),
-                'quantity'   => $qty,
+                'user_id'        => auth()->id(),
+                'session_id'     => session()->getId(),
+                'product_id'     => $product->id,
+                'price'          => $product->finalPrice(),
+                'quantity'       => $qty,
+
+                // ✅ SAVE DROPDOWN DATA
+                'options'        => $request->input('selected_options'),
+                'whatsapp_meta'  => $request->input('whatsapp_meta'),
             ]);
+
         }
 
         return redirect('/cart')->with('success', 'Added to cart');

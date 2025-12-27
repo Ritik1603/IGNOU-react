@@ -12,10 +12,14 @@ class Cart extends Model
         'product_id',
         'quantity',
         'price',
+        'options',
+        'whatsapp_meta'
     ];
 
     protected $casts = [
         'price' => 'float',
+        'options' => 'array',
+        'whatsapp_meta' => 'array', 
     ];
 
     public function product()

@@ -37,6 +37,12 @@ class Product extends Model
         return $this->discount_price ?? $this->price;
     }
 
+    public function subject()
+    {
+        return $this->belongsTo(Subject::class, 'subject_code', 'code');
+    }
+
+
     public static function existsForSubject(string $material, string $level, string $subjectCode): bool
     {
         return self::where([
@@ -45,6 +51,13 @@ class Product extends Model
             'subject_code'  => $subjectCode,
             'status'        => 1,
         ])->exists();
+    }
+
+    public function scopeVariantsOf($query, Product $product)
+    {
+        return $query->where('subject_code', $product->subject_code)
+                    ->where('level', $product->level)
+                    ->where('status', 1);
     }
 
 }

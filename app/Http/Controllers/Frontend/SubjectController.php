@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Level;
 use App\Models\Subject;
+use App\Models\Product;
 use Inertia\Inertia;
 
 class SubjectController extends Controller
@@ -28,32 +29,21 @@ class SubjectController extends Controller
      * Subject → material selection
      * /levels/ug/BCA-101
      */
-    public function show(Level $level, Subject $subject)
-    {
-        $allMaterials = [
-            'solved-assignments',
-            'guess-papers',
-            'previous-year-papers',
-            'notes',
-        ];
+public function show(Level $level, Subject $subject)
+{
+    $products = Product::where('subject_code', $subject->code)
+        ->where('status', 1)
+        ->orderByDesc('session') // latest first
+        ->get()
+        ->groupBy('material_type');
 
-        // Filter only available materials
-        $availableMaterials = array_values(array_filter(
-            $allMaterials,
-            fn ($material) =>
-                \App\Models\Product::existsForSubject(
-                    $material,
-                    $level->slug,      // ug / pg
-                    $subject->code     // BCOC-132
-                )
-        ));
+    return Inertia::render('Subjects/Show', [
+        'level'      => $level->name,
+        'levelSlug'  => strtolower($level->slug),
+        'subject'    => $subject,
+        'productsByMaterial' => $products,
+    ]);
+}
 
-        return Inertia::render('Subjects/Show', [
-            'level'      => strtoupper($level->slug),
-            'levelSlug'  => $level->slug,
-            'subject'    => $subject,
-            'materials'  => $availableMaterials,
-        ]);
-    }
 
 }

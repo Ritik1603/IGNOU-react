@@ -31,6 +31,11 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
+RUN mkdir -p database \
+ && touch database/database.sqlite \
+ && chmod -R 775 database storage bootstrap/cache
+
+
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
@@ -44,6 +49,13 @@ RUN npm install && npm run build
 EXPOSE 8080
 
 # Start Laravel
-CMD php -S 0.0.0.0:${PORT} -t public
+CMD ["sh", "-c", "mkdir -p /app/database \
+ && touch /app/database/database.sqlite \
+ && chmod -R 775 /app/database /app/storage /app/bootstrap/cache \
+ && php artisan config:clear \
+ && php artisan cache:clear \
+ && php artisan migrate --force || true \
+ && php -S 0.0.0.0:${PORT:-8080} -t public"]
+
 
 
